@@ -1,11 +1,13 @@
 @font-face {
   font-family: "Whyte Inktrap Heavy";
   src: url(static/fonts/Whyte-Inktrap-Heavy.otf) format("opentype");
+  font-display: swap;
 }
 
 @font-face {
   font-family: "Surt";
   src: url(static/fonts/Surt-Regular.woff) format("woff");
+  font-display: swap;
 }
 
 * {
