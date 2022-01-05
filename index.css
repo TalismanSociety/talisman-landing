@@ -27,16 +27,17 @@ main {
   padding: 1rem;
 }
 
-.heavy {
-  font-family: "Whyte Inktrap Heavy", serif;
-  font-size: 10vw;
-  font-weight: bolder;
-  line-height: 1;
+section {
+  margin: 4rem 0;
 }
 
 img {
   object-fit: contain;
   width: 100%;
+}
+
+button > a {
+  text-decoration: none;
 }
 
 button {
@@ -47,6 +48,7 @@ button {
   background-color: #d5ff5c;
   color: black;
   border-color: none;
+  border: 0;
   border-radius: 0.5rem;
   box-shadow: none;
 
@@ -56,4 +58,30 @@ button {
 
   text-align: center;
   padding: 0 1.25rem;
+}
+
+button:hover {
+  cursor: pointer;
+}
+
+button.secondary {
+  background-color: transparent;
+  color: #fafafa;
+  border: 1px solid #fafafa;
+}
+
+p {
+  color: #a5a5a5;
+  padding: 0 18vw;
+}
+
+.heavy {
+  font-family: "Whyte Inktrap Heavy", serif;
+  font-size: 10vw;
+  font-weight: bolder;
+  line-height: 1;
+}
+
+section > :last-child {
+  margin-top: 1.5rem;
 }
