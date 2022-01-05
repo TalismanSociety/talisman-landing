@@ -6,8 +6,17 @@
 
 @font-face {
   font-family: "Surt";
-  src: url(static/fonts/Surt-Regular.woff) format("woff");
+  src: url(static/fonts/Surt-SemiBold.woff2) format("woff");
   font-display: swap;
+  font-style: bold;
+  font-weight: 800;
+}
+
+:root {
+  --color-white: #fafafa;
+  --color-black: #000000;
+  --color-primary: #d5ff5c;
+  --color-light-grey: #a5a5a5;
 }
 
 * {
@@ -16,8 +25,8 @@
 
 body {
   font-family: "Surt", serif;
-  background-color: black;
-  color: #fafafa;
+  background-color: var(--color-black);
+  color: var(--color-white);
   text-align: center;
 }
 
@@ -42,13 +51,25 @@ button > a {
   text-decoration: none;
 }
 
+button.secondary > a {
+  color: var(--color-white);
+}
+
+button > a:visited {
+  color: var(--color-black);
+}
+
+button.secondary > a:visited {
+  color: var(--color-white);
+}
+
 button {
   display: inline-flex;
   align-items: center;
   justify-content: center;
 
-  background-color: #d5ff5c;
-  color: black;
+  background-color: var(--color-primary);
+  color: var(--color-black);
   border-color: none;
   border: 0;
   border-radius: 0.5rem;
@@ -60,6 +81,8 @@ button {
 
   text-align: center;
   padding: 0 1.25rem;
+
+  font-family: "Surt", serif;
 }
 
 button:hover {
@@ -68,12 +91,12 @@ button:hover {
 
 button.secondary {
   background-color: transparent;
-  color: #fafafa;
-  border: 1px solid #fafafa;
+  color: var(--color-white);
+  border: 1px solid var(--color-white);
 }
 
 p {
-  color: #a5a5a5;
+  color: var(--color-light-grey);
   padding: 0 18vw;
 }
 
