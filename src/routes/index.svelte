@@ -1,50 +1,59 @@
-<script>
-	import successkid from 'images/successkid.jpg';
+<script context="module" lang="ts">
+	export const prerender = true;
 </script>
 
+<script lang="ts">
+	import Counter from '$lib/Counter.svelte';
+</script>
+
+<svelte:head>
+	<title>Home</title>
+</svelte:head>
+
+<section>
+	<h1>
+		<div class="welcome">
+			<picture>
+				<source srcset="svelte-welcome.webp" type="image/webp" />
+				<img src="svelte-welcome.png" alt="Welcome" />
+			</picture>
+		</div>
+
+		to your new<br />SvelteKit app
+	</h1>
+
+	<h2>
+		try editing <strong>src/routes/index.svelte</strong>
+	</h2>
+
+	<Counter />
+</section>
+
 <style>
-	h1, figure, p {
-		text-align: center;
-		margin: 0 auto;
+	section {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		flex: 1;
 	}
 
 	h1 {
-		font-size: 2.8em;
-		text-transform: uppercase;
-		font-weight: 700;
-		margin: 0 0 0.5em 0;
-	}
-
-	figure {
-		margin: 0 0 1em 0;
-	}
-
-	img {
 		width: 100%;
-		max-width: 400px;
-		margin: 0 0 1em 0;
 	}
 
-	p {
-		margin: 1em auto;
+	.welcome {
+		position: relative;
+		width: 100%;
+		height: 0;
+		padding: 0 0 calc(100% * 495 / 2048) 0;
 	}
 
-	@media (min-width: 480px) {
-		h1 {
-			font-size: 4em;
-		}
+	.welcome img {
+		position: absolute;
+		width: 100%;
+		height: 100%;
+		top: 0;
+		display: block;
 	}
 </style>
-
-<svelte:head>
-	<title>Sapper project template</title>
-</svelte:head>
-
-<h1>Great success!</h1>
-
-<figure>
-	<img alt="Success Kid" src="{successkid}">
-	<figcaption>Have fun with Sapper!</figcaption>
-</figure>
-
-<p><strong>Try editing this file (src/routes/index.svelte) to test live reloading.</strong></p>
