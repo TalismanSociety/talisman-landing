@@ -1,0 +1,59 @@
+@font-face {
+  font-family: "Whyte Inktrap Heavy";
+  src: url(static/fonts/Whyte-Inktrap-Heavy.otf) format("opentype");
+}
+
+@font-face {
+  font-family: "Surt";
+  src: url(static/fonts/Surt-Regular.woff) format("woff");
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Surt", serif;
+  background-color: black;
+  color: #fafafa;
+  text-align: center;
+}
+
+header {
+  padding: 1rem;
+}
+
+main {
+  padding: 1rem;
+}
+
+.heavy {
+  font-family: "Whyte Inktrap Heavy", serif;
+  font-size: 10vw;
+  font-weight: bolder;
+  line-height: 1;
+}
+
+img {
+  object-fit: contain;
+  width: 100%;
+}
+
+button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  background-color: #d5ff5c;
+  color: black;
+  border-color: none;
+  border-radius: 0.5rem;
+  box-shadow: none;
+
+  padding: 0.25em 0.75em;
+  min-width: 10ch;
+  min-height: 44px;
+
+  text-align: center;
+  padding: 0 1.25rem;
+}
