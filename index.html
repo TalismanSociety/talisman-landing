@@ -5,25 +5,40 @@
     <link rel="stylesheet" type="text/css" href="index.css" />
   </head>
   <body>
+    <nav id="sticky-nav">
+      <ul>
+        <li>
+          <a href="/">
+            <img src="static/images/talisman-logo.png" alt="Talisman" />
+          </a>
+        </li>
+        <span class="flex gap-2">
+          <li>
+            <a href="https://app.talisman.xyz">Launch app</a>
+          </li>
+          <li>
+            <button>
+              <a
+                href="https://discord.gg/rQgTD9SGtU"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Join Discord
+              </a>
+            </button>
+          </li>
+        </span>
+      </ul>
+    </nav>
     <header>
-      <img src="static/images/paraverse.png" alt="The Paraverse" />
-      <h1 class="heavy" style="margin: -3vw">TRAVERSE THE PARAVERSE</h1>
+      <img src="static/images/paraverse-main.png" alt="The Paraverse" />
+      <h1 class="heavy" style="margin: -3vw 0 0">UNLOCK THE PARAVERSE</h1>
       <p>
-        Explore Polkadot & Kusama with the Talisman wallet and asset dashboard.
+        Talisman is a crypto wallet that unlocks a new world of web3
+        applications in Polkadot and Kusama.
       </p>
-      <button>
-        <a href="https://app.talisman.xyz"> Go to app </a>
-      </button>
     </header>
     <main>
-      <section>
-        <h2>Adventure awaits</h2>
-        <p>
-          Explore Polkadot and Kusama with Wayfinder, a web wallet build for a
-          multi-chain future
-        </p>
-        <button class="secondary">Sign-up for the Beta</button>
-      </section>
       <section>
         <div style="display: flex">
           <img
@@ -67,4 +82,20 @@
       </section>
     </main>
   </body>
+  <script>
+    const stickyNav = document.getElementById("sticky-nav");
+    window.onscroll = function () {
+      "use strict";
+      if (
+        document.body.scrollTop >= 200 ||
+        document.documentElement.scrollTop >= 200
+      ) {
+        stickyNav.classList.add("nav-colored");
+        stickyNav.classList.remove("nav-transparent");
+      } else {
+        stickyNav.classList.add("nav-transparent");
+        stickyNav.classList.remove("nav-colored");
+      }
+    };
+  </script>
 </html>

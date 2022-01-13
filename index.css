@@ -17,6 +17,7 @@
   --color-black: #000000;
   --color-primary: #d5ff5c;
   --color-light-grey: #a5a5a5;
+  --side-gutter: 2rem;
 }
 
 * {
@@ -28,14 +29,8 @@ body {
   background-color: var(--color-black);
   color: var(--color-white);
   text-align: center;
-}
-
-header {
-  padding: 1rem;
-}
-
-main {
-  padding: 1rem;
+  margin: 0;
+  padding: 0;
 }
 
 section {
@@ -47,8 +42,12 @@ img {
   width: 100%;
 }
 
-button > a {
+a {
   text-decoration: none;
+}
+
+a:visited {
+  color: inherit;
 }
 
 button.secondary > a {
@@ -102,11 +101,50 @@ p {
 
 .heavy {
   font-family: "Whyte Inktrap Heavy", serif;
-  font-size: 10vw;
-  font-weight: bolder;
-  line-height: 1;
+  font-size: 13vw;
+  font-weight: 900;
+  line-height: 0.9;
+}
+
+.flex {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
 }
 
 section > :last-child {
   margin-top: 1.5rem;
+}
+
+ul {
+  list-style-type: none;
+  padding-inline-start: unset;
+}
+
+nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  padding: 0 var(--side-gutter);
+}
+
+nav ul {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+nav ul li {
+  font-weight: lighter;
+}
+
+.nav-colored {
+  background-color: var(--color-black);
+  transition: 0.3s ease-in-out;
+}
+
+.nav-transparent {
+  background-color: transparent;
+  transition: 0.3s ease-in-out;
 }
