@@ -1,0 +1,22 @@
+.heavy {
+  font-family: "Whyte Inktrap Heavy", serif;
+  font-size: 13vw;
+  font-weight: 900;
+  line-height: 0.9;
+}
+
+.flex {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.nav-colored {
+  background-color: var(--color-black);
+  transition: 0.3s ease-in-out;
+}
+
+.nav-transparent {
+  background-color: transparent;
+  transition: 0.3s ease-in-out;
+}

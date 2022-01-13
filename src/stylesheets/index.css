@@ -1,29 +1,3 @@
-@font-face {
-  font-family: "Whyte Inktrap Heavy";
-  src: url(static/fonts/Whyte-Inktrap-Heavy.otf) format("opentype");
-  font-display: swap;
-}
-
-@font-face {
-  font-family: "Surt";
-  src: url(static/fonts/Surt-SemiBold.woff2) format("woff");
-  font-display: swap;
-  font-style: bold;
-  font-weight: 800;
-}
-
-:root {
-  --color-white: #fafafa;
-  --color-black: #000000;
-  --color-primary: #d5ff5c;
-  --color-light-grey: #a5a5a5;
-  --side-gutter: 2rem;
-}
-
-* {
-  box-sizing: border-box;
-}
-
 body {
   font-family: "Surt", serif;
   background-color: var(--color-black);
@@ -99,26 +73,8 @@ p {
   padding: 0 18vw;
 }
 
-.heavy {
-  font-family: "Whyte Inktrap Heavy", serif;
-  font-size: 13vw;
-  font-weight: 900;
-  line-height: 0.9;
-}
-
-.flex {
-  display: flex;
-  align-items: center;
-  gap: 1.5rem;
-}
-
 section > :last-child {
   margin-top: 1.5rem;
-}
-
-ul {
-  list-style-type: none;
-  padding-inline-start: unset;
 }
 
 nav {
@@ -137,14 +93,4 @@ nav ul {
 
 nav ul li {
   font-weight: lighter;
-}
-
-.nav-colored {
-  background-color: var(--color-black);
-  transition: 0.3s ease-in-out;
-}
-
-.nav-transparent {
-  background-color: transparent;
-  transition: 0.3s ease-in-out;
 }
