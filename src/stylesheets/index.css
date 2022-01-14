@@ -5,10 +5,37 @@ body {
   text-align: center;
   margin: 0;
   padding: 0;
+  font-size: 16px;
+}
+
+@media (min-width: 768px) {
+  body {
+    font-size: 1.3vw;
+  }
+}
+
+h3 {
+  font-weight: 300;
+}
+
+h1 {
+  font-size: revert;
+}
+
+@media (min-width: 768px) {
+  h1 {
+    font-size: 3vw;
+    line-height: 1;
+  }
+}
+
+p {
+  color: var(--color-light-grey);
+  font-size: 1.2rem;
 }
 
 section {
-  margin: 4rem 0;
+  margin: 12rem 0;
 }
 
 img {
@@ -18,6 +45,10 @@ img {
 
 a {
   text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
 }
 
 a:visited {
@@ -45,17 +76,17 @@ button {
   color: var(--color-black);
   border-color: none;
   border: 0;
-  border-radius: 0.5rem;
+  border-radius: 0.75rem;
   box-shadow: none;
 
-  padding: 0.25em 0.75em;
+  padding: 1rem 2rem;
   min-width: 10ch;
   min-height: 44px;
 
   text-align: center;
-  padding: 0 1.25rem;
 
   font-family: "Surt", serif;
+  white-space: nowrap;
 }
 
 button:hover {
@@ -66,15 +97,6 @@ button.secondary {
   background-color: transparent;
   color: var(--color-white);
   border: 1px solid var(--color-white);
-}
-
-p {
-  color: var(--color-light-grey);
-  padding: 0 18vw;
-}
-
-section > :last-child {
-  margin-top: 1.5rem;
 }
 
 nav {

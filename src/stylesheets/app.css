@@ -1,8 +1,28 @@
+.logo {
+  width: auto;
+  height: 2rem;
+}
+
 .heavy {
   font-family: "Whyte Inktrap Heavy", serif;
   font-size: 13vw;
   font-weight: 900;
   line-height: 0.9;
+}
+
+.gutters {
+  margin-left: calc(var(--side-gutter) * 2);
+  margin-right: calc(var(--side-gutter) * 2);
+}
+
+.text-gutters {
+  padding: 0 1rem;
+}
+
+@media (min-width: 768px) {
+  .text-gutters {
+    padding: 0 16vw;
+  }
 }
 
 .flex {
@@ -19,4 +39,8 @@
 .nav-transparent {
   background-color: transparent;
   transition: 0.3s ease-in-out;
+}
+
+.space-y-2 > * + * {
+  margin-top: 2rem;
 }
