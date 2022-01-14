@@ -8,3 +8,7 @@ ul {
   margin-block-start: unset;
   margin-block-end: unset;
 }
+
+button {
+  font-family: inherit;
+}

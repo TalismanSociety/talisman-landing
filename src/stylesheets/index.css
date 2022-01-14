@@ -1,15 +1,22 @@
 html {
   font-size: 16px;
+  font-family: "Surt", serif;
 }
 
-@media screen and (min-width: 320px) {
+@media screen and (min-width: 425px) {
   html {
-    font-size: calc(16px + 6 * ((100vw - 320px) / 680));
+    font-size: calc(16px + 2 * ((100vw - 425px) / 680));
   }
 }
-@media screen and (min-width: 1000px) {
+@media screen and (min-width: 1440px) {
   html {
     font-size: 22px;
+  }
+}
+
+@media screen and (min-width: 2560px) {
+  html {
+    font-size: 32px;
   }
 }
 
@@ -58,6 +65,11 @@ img {
 
 a {
   text-decoration: none;
+  color: var(--color-white);
+}
+
+a:hover > button {
+  text-decoration: underline;
 }
 
 a:hover {
@@ -97,8 +109,6 @@ button {
   min-height: 44px;
 
   text-align: center;
-
-  font-family: "Surt", serif;
   white-space: nowrap;
 }
 

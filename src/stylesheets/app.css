@@ -11,8 +11,15 @@
 }
 
 .gutters {
-  margin-left: calc(var(--side-gutter) * 2);
-  margin-right: calc(var(--side-gutter) * 2);
+  margin-left: var(--side-gutter);
+  margin-right: var(--side-gutter);
+}
+
+@media (min-width: 768px) {
+  .gutters {
+    margin-left: calc(var(--side-gutter) * 2);
+    margin-right: calc(var(--side-gutter) * 2);
+  }
 }
 
 .text-gutters {
