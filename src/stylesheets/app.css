@@ -1,6 +1,6 @@
 .logo {
   width: auto;
-  height: 2rem;
+  height: 1.5rem;
 }
 
 .heavy {
@@ -31,6 +31,10 @@
   gap: 1.5rem;
 }
 
+.wrap {
+  flex-wrap: wrap;
+}
+
 .nav-colored {
   background-color: var(--color-black);
   transition: 0.3s ease-in-out;
@@ -39,6 +43,13 @@
 .nav-transparent {
   background-color: transparent;
   transition: 0.3s ease-in-out;
+}
+
+.sticky-nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
 }
 
 .space-y-2 > * + * {
