@@ -58,6 +58,10 @@ section {
   }
 }
 
+section p {
+  margin: 2rem;
+}
+
 img {
   object-fit: contain;
   width: 100%;
