@@ -1,27 +1,10 @@
 html {
   font-size: 16px;
-  font-family: "Surt", serif;
-}
-
-@media screen and (min-width: 425px) {
-  html {
-    font-size: calc(16px + 2 * ((100vw - 425px) / 680));
-  }
-}
-@media screen and (min-width: 1440px) {
-  html {
-    font-size: 22px;
-  }
-}
-
-@media screen and (min-width: 2560px) {
-  html {
-    font-size: 32px;
-  }
+  font-family: "Surt Regular", serif;
+  font-weight: 400;
 }
 
 body {
-  font-family: "Surt", serif;
   background-color: var(--color-black);
   color: var(--color-white);
   text-align: center;
@@ -30,22 +13,18 @@ body {
 }
 
 h3 {
-  font-weight: 300;
+  font-size: 2rem;
+  font-weight: 400;
 }
 
 h1 {
-  font-size: revert;
-}
-
-@media (min-width: 768px) {
-  h1 {
-    font-size: 3vw;
-    line-height: 1;
-  }
+  font-family: "Surt SemiBold Expanded", serif;
+  font-size: 2.5rem;
 }
 
 p {
   color: var(--color-light-grey);
+  font-size: 1.5rem;
 }
 
 section {
@@ -73,11 +52,11 @@ a {
 }
 
 a:hover > button {
-  text-decoration: underline;
+  text-decoration: none;
 }
 
 a:hover {
-  text-decoration: underline;
+  text-decoration: none;
 }
 
 a:visited {
@@ -103,14 +82,14 @@ button {
 
   background-color: var(--color-primary);
   color: var(--color-black);
-  border-color: none;
+  border-color: unset;
   border: 0;
   border-radius: 0.75rem;
   box-shadow: none;
 
-  padding: 1rem 2rem;
+  padding: 0.75rem 1.5rem;
   min-width: 10ch;
-  min-height: 44px;
+  max-height: 2.5rem;
 
   text-align: center;
   white-space: nowrap;
@@ -118,6 +97,7 @@ button {
 
 button:hover {
   cursor: pointer;
+  opacity: 0.8;
 }
 
 button.secondary {
@@ -135,8 +115,4 @@ nav ul {
   align-items: center;
   justify-content: space-between;
   flex-wrap: wrap;
-}
-
-nav ul li {
-  font-weight: lighter;
 }
