@@ -15,11 +15,21 @@
   right: 0;
 }
 
+#sticky-nav.closed {
+  top: -6rem;
+}
+
 .header {
   display: flex;
   align-items: center;
   justify-content: space-between;
   margin: 0.5rem var(--side-gutter);
+}
+
+@media (min-width: 768px) {
+  .header {
+    margin: 0 var(--side-gutter);
+  }
 }
 
 .header ul {
