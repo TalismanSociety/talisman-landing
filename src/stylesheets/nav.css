@@ -154,33 +154,32 @@
   display: block;
 }
 
-.footer nav ul > * + * {
+.footer nav > * + * {
   margin-top: 3rem;
 }
 
-.footer nav ul .menu > * + * {
+.footer nav ul > li + li {
   margin-top: 1rem;
 }
 
 @media (min-width: 768px) {
+  .footer nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
   .footer nav ul {
     display: flex;
     align-items: center;
     gap: 1.5rem;
-    justify-content: space-between;
   }
 
-  .footer nav ul .menu {
-    display: flex;
-    align-items: center;
-    gap: 1.5rem;
-  }
-
-  .footer nav ul .menu > * + * {
+  .footer nav ul > li + li {
     margin-top: revert;
   }
 
-  .footer nav ul > * + * {
+  .footer nav > * + * {
     margin-top: revert;
   }
 }
