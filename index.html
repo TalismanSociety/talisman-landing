@@ -23,8 +23,8 @@
         </li>
         <input class="menu-btn" type="checkbox" id="menu-btn" />
         <label class="menu-icon" for="menu-btn">
-          <span class="navicon"></span
-        ></label>
+          <span class="navicon"></span>
+        </label>
         <ul class="menu">
           <li class="mobile-only" target="_blank" rel="noopener noreferrer">
             <a href="https://discord.gg/rQgTD9SGtU">Join Discord</a>
@@ -182,36 +182,6 @@
         </ul>
       </nav>
     </footer>
+    <script type="text/javascript" src="src/js/nav.js"></script>
   </body>
-  <script>
-    const stickyNav = document.getElementById("sticky-nav");
-    const menuIcon = document.getElementById("menu-btn");
-  </script>
-  <script>
-    window.onscroll = function () {
-      "use strict";
-      if (
-        document.body.scrollTop >= 100 ||
-        document.documentElement.scrollTop >= 100 ||
-        menuIcon.checked
-      ) {
-        stickyNav.classList.add("nav-colored");
-        stickyNav.classList.remove("nav-transparent");
-      } else {
-        stickyNav.classList.add("nav-transparent");
-        stickyNav.classList.remove("nav-colored");
-      }
-    };
-  </script>
-  <script>
-    menuIcon.addEventListener("change", function (e) {
-      if (e.target.checked) {
-        stickyNav.classList.add("nav-colored");
-        stickyNav.classList.remove("nav-transparent");
-      } else if (window.scrollY < 100) {
-        stickyNav.classList.add("nav-transparent");
-        stickyNav.classList.remove("nav-colored");
-      }
-    });
-  </script>
 </html>
