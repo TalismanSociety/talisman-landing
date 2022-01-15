@@ -38,7 +38,13 @@ section {
 }
 
 section p {
-  margin: 2rem;
+  margin: revert;
+}
+
+@media (min-width: 768px) {
+  section p {
+    margin: 2rem;
+  }
 }
 
 img {
