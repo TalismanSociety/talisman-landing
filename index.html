@@ -2,69 +2,216 @@
 <html>
   <head>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="stylesheet" type="text/css" href="index.css" />
+    <link rel="stylesheet" type="text/css" href="src/stylesheets/reset.css" />
+    <link rel="stylesheet" type="text/css" href="src/stylesheets/fonts.css" />
+    <link rel="stylesheet" type="text/css" href="src/stylesheets/vars.css" />
+    <link rel="stylesheet" type="text/css" href="src/stylesheets/nav.css" />
+    <link rel="stylesheet" type="text/css" href="src/stylesheets/index.css" />
+    <link rel="stylesheet" type="text/css" href="src/stylesheets/app.css" />
   </head>
   <body>
+    <nav id="sticky-nav">
+      <ul class="header">
+        <li>
+          <a href="/">
+            <img
+              class="logo"
+              src="static/images/talisman-logo.svg"
+              alt="Talisman"
+            />
+          </a>
+        </li>
+        <input class="menu-btn" type="checkbox" id="menu-btn" />
+        <label class="menu-icon" for="menu-btn">
+          <span class="navicon"></span
+        ></label>
+        <ul class="menu">
+          <li class="mobile-only" target="_blank" rel="noopener noreferrer">
+            <a href="https://discord.gg/rQgTD9SGtU">Join Discord</a>
+          </li>
+          <li>
+            <a href="https://app.talisman.xyz">Launch app</a>
+          </li>
+          <li class="desktop-only">
+            <a
+              href="https://discord.gg/rQgTD9SGtU"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <button>Join Discord</button>
+            </a>
+          </li>
+        </ul>
+      </ul>
+    </nav>
     <header>
-      <img src="static/images/paraverse.png" alt="The Paraverse" />
-      <h1 class="heavy" style="margin: -3vw">TRAVERSE THE PARAVERSE</h1>
-      <p>
-        Explore Polkadot & Kusama with the Talisman wallet and asset dashboard.
-      </p>
-      <button>
-        <a href="https://app.talisman.xyz"> Go to app </a>
-      </button>
+      <img
+        class="hero"
+        src="static/images/paraverse-main.png"
+        alt="The Paraverse"
+      />
+      <h1 class="heavy" style="margin: -3vw 0 0">UNLOCK THE PARAVERSE</h1>
+      <h3 class="text-gutters">
+        Talisman is a crypto wallet that unlocks a new world of web3
+        applications in Polkadot and Kusama.
+      </h3>
     </header>
     <main>
-      <section>
-        <h2>Adventure awaits</h2>
-        <p>
-          Explore Polkadot and Kusama with Wayfinder, a web wallet build for a
-          multi-chain future
-        </p>
-        <button class="secondary">Sign-up for the Beta</button>
-      </section>
-      <section>
-        <div style="display: flex">
-          <img
-            src="static/images/agyle.png"
-            alt="agyle"
-            style="width: 30%"
-            loading="lazy"
-          />
-          <img
-            src="static/images/extension-preview.png"
-            alt="Extension preview"
-            style="width: 70%"
-            loading="lazy"
-          />
-        </div>
-      </section>
-      <section>
-        <h1>Our greatest strength will always be each other</h1>
-        <p>
-          We are on a mission to accelerate composability and unite the
-          Paraverse. Will you join us?
-        </p>
-        <button class="secondary">Read the Manifesto</button>
-      </section>
-      <section>
-        <img src="static/images/semtinel.png" alt="Sentinel" loading="lazy" />
-        <h1>Become a Sentinel</h1>
-        <p>
-          Help us build the future of web3 and contribute to the vision of our
-          products
-        </p>
-        <button class="secondary">
+      <section class="gutters">
+        <img
+          src="static/images/card-extension.png"
+          alt="The Talisman Extension"
+        />
+        <div class="text-gutters space-y-2">
+          <h1>Take control of your multi-chain assets</h1>
+          <p>
+            The Talisman browser extension allows you to safely store, send,
+            receive, and harness your assets. You can get early access today if
+            you hold a Spirit Key.
+          </p>
           <a
-            href="https://glib-calendula-bf6.notion.site/The-Mission-Page-5322d8655be34993893640c3ecb2144b"
+            href="https://singular.rmrk.app/collections/b6e98494bff52d3b1e-SPIRIT"
             target="_blank"
             rel="noopener noreferrer"
           >
-            Learn more
+            <button class="secondary cta">Get a Spirit Key</button>
           </a>
-        </button>
+        </div>
+      </section>
+      <section class="gutters">
+        <img
+          src="static/images/webapp-portfolio.png"
+          alt="The Talisman Webapp"
+        />
+        <div class="text-gutters space-y-2">
+          <h1>Easily get started with DotSama</h1>
+          <p>
+            The Talisman web app allows you to buy DOT and KSM, contribute to
+            crowdloans, stake (coming soon) and more.
+          </p>
+          <a href="https://app.talisman.xyz">
+            <button class="secondary cta">Launch app</button>
+          </a>
+        </div>
+      </section>
+      <section>
+        <img src="static/images/join-us.png" alt="Join us" loading="lazy" />
+        <div class="gutters text-gutters space-y-2">
+          <h1>
+            We are on a mission to accelerate composability and unite the
+            Paraverse.
+          </h1>
+          <p>
+            Talisman is currently under development and anybody can contribute
+            to the vision by joining our community.
+          </p>
+          <a
+            href="https://discord.gg/rQgTD9SGtU"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <button class="cta">Join us</button>
+          </a>
+        </div>
       </section>
     </main>
+    <footer class="footer">
+      <nav>
+        <ul>
+          <span class="menu">
+            <li>
+              <a
+                href="https://twitter.com/wearetalisman"
+                alt="Twitter"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Twitter
+              </a>
+            </li>
+            <li>
+              <a
+                href="https://discord.gg/rQgTD9SGtU"
+                alt="Discord"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Discord
+              </a>
+            </li>
+            <li>
+              <a
+                href="https://medium.com/we-are-talisman"
+                alt="Medium"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Medium
+              </a>
+            </li>
+            <li>
+              <a
+                href="https://github.com/TalismanSociety"
+                alt="Github"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Github
+              </a>
+            </li>
+            <li>
+              <a
+                href="https://app.talisman.xyz"
+                alt="Web App"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Web App
+              </a>
+            </li>
+          </span>
+          <li>
+            <a href="/">
+              <img
+                class="logo"
+                src="static/images/talisman-logo.svg"
+                alt="Talisman"
+              />
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </footer>
   </body>
+  <script>
+    const stickyNav = document.getElementById("sticky-nav");
+    const menuIcon = document.getElementById("menu-btn");
+  </script>
+  <script>
+    window.onscroll = function () {
+      "use strict";
+      if (
+        document.body.scrollTop >= 100 ||
+        document.documentElement.scrollTop >= 100 ||
+        menuIcon.checked
+      ) {
+        stickyNav.classList.add("nav-colored");
+        stickyNav.classList.remove("nav-transparent");
+      } else {
+        stickyNav.classList.add("nav-transparent");
+        stickyNav.classList.remove("nav-colored");
+      }
+    };
+  </script>
+  <script>
+    menuIcon.addEventListener("change", function (e) {
+      if (e.target.checked) {
+        stickyNav.classList.add("nav-colored");
+        stickyNav.classList.remove("nav-transparent");
+      } else if (window.scrollY < 100) {
+        stickyNav.classList.add("nav-transparent");
+        stickyNav.classList.remove("nav-colored");
+      }
+    });
+  </script>
 </html>

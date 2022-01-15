@@ -1,0 +1,86 @@
+.logo {
+  width: auto;
+  height: 1.75rem;
+}
+
+.heavy {
+  font-family: "Whyte Inktrap Heavy", serif;
+  font-size: 13vw;
+  font-weight: 900;
+  line-height: 0.9;
+}
+
+.gutters {
+  margin-left: var(--side-gutter);
+  margin-right: var(--side-gutter);
+}
+
+@media (min-width: 768px) {
+  .gutters {
+    margin-left: calc(var(--side-gutter) * 2);
+    margin-right: calc(var(--side-gutter) * 2);
+  }
+}
+
+.text-gutters {
+  padding: 0 1rem;
+}
+
+@media (min-width: 768px) {
+  .text-gutters {
+    padding: 0 13vw;
+  }
+}
+
+.flex {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.justify-between {
+  justify-content: space-between;
+}
+
+.wrap {
+  flex-wrap: wrap;
+}
+
+.space-y-2 > * + * {
+  margin-top: 2rem;
+}
+
+.hero {
+  object-fit: cover;
+  width: 100%;
+  height: 90vh;
+}
+
+@media (min-width: 768px) {
+  .hero {
+    object-fit: contain;
+    width: 100%;
+    height: auto;
+  }
+}
+
+.mobile-only {
+  display: revert;
+}
+
+.desktop-only {
+  display: none;
+}
+
+@media (min-width: 768px) {
+  .mobile-only {
+    display: none;
+  }
+  .desktop-only {
+    display: revert;
+  }
+}
+
+.cta {
+  margin-top: 1rem;
+}

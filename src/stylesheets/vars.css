@@ -1,0 +1,22 @@
+:root {
+  --color-white: #fafafa;
+  --color-black: #000000;
+  --color-primary: #d5ff5c;
+  --color-light-grey: #a5a5a5;
+  --color-dark-grey: #262626;
+  --side-gutter: 1.5rem;
+
+  --screen-xs: "(min-width: 320px)";
+  --screen-sm: "(min-width: 375px)";
+  --screen-md: "(min-width: 425px)";
+  --screen-lg: "(min-width: 768px)";
+  --screen-xl: "(min-width: 1024px)";
+  --screen-xxl: "(min-width: 1440px)";
+  --screen-xxxl: "(min-width: 2560px)";
+}
+
+@media (min-width: 768px) {
+  :root {
+    --side-gutter: 2rem;
+  }
+}
