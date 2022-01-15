@@ -87,12 +87,20 @@ button {
   border-radius: 0.75rem;
   box-shadow: none;
 
-  padding: 0.75rem 1.5rem;
+  width: 100%;
+  padding: 1.75rem;
   min-width: 10ch;
   max-height: 2.5rem;
 
   text-align: center;
   white-space: nowrap;
+}
+
+@media (min-width: 768px) {
+  button {
+    padding: 0.75rem 1.5rem;
+    width: auto;
+  }
 }
 
 button:hover {
@@ -104,15 +112,4 @@ button.secondary {
   background-color: transparent;
   color: var(--color-white);
   border: 1px solid var(--color-white);
-}
-
-nav {
-  padding: 1rem var(--side-gutter);
-}
-
-nav ul {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  flex-wrap: wrap;
 }

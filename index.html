@@ -5,26 +5,34 @@
     <link rel="stylesheet" type="text/css" href="src/stylesheets/reset.css" />
     <link rel="stylesheet" type="text/css" href="src/stylesheets/fonts.css" />
     <link rel="stylesheet" type="text/css" href="src/stylesheets/vars.css" />
+    <link rel="stylesheet" type="text/css" href="src/stylesheets/nav.css" />
     <link rel="stylesheet" type="text/css" href="src/stylesheets/index.css" />
     <link rel="stylesheet" type="text/css" href="src/stylesheets/app.css" />
   </head>
   <body>
     <nav id="sticky-nav">
-      <ul>
+      <ul class="header">
         <li>
           <a href="/">
             <img
               class="logo"
-              src="static/images/talisman-logo.png"
+              src="static/images/talisman-logo.svg"
               alt="Talisman"
             />
           </a>
         </li>
-        <span class="flex gap-2">
+        <input class="menu-btn" type="checkbox" id="menu-btn" />
+        <label class="menu-icon" for="menu-btn">
+          <span class="navicon"></span
+        ></label>
+        <ul class="menu">
+          <li class="mobile-only" target="_blank" rel="noopener noreferrer">
+            <a href="https://discord.gg/rQgTD9SGtU">Join Discord</a>
+          </li>
           <li>
             <a href="https://app.talisman.xyz">Launch app</a>
           </li>
-          <li>
+          <li class="desktop-only">
             <a
               href="https://discord.gg/rQgTD9SGtU"
               target="_blank"
@@ -33,11 +41,15 @@
               <button>Join Discord</button>
             </a>
           </li>
-        </span>
+        </ul>
       </ul>
     </nav>
     <header>
-      <img src="static/images/paraverse-main.png" alt="The Paraverse" />
+      <img
+        class="hero"
+        src="static/images/paraverse-main.png"
+        alt="The Paraverse"
+      />
       <h1 class="heavy" style="margin: -3vw 0 0">UNLOCK THE PARAVERSE</h1>
       <h3 class="text-gutters">
         Talisman is a crypto wallet that unlocks a new world of web3
@@ -103,10 +115,10 @@
         </div>
       </section>
     </main>
-    <footer>
+    <footer class="footer">
       <nav>
-        <ul class="flex wrap">
-          <span class="flex wrap gap-2">
+        <ul>
+          <span class="menu">
             <li>
               <a
                 href="https://twitter.com/wearetalisman"
@@ -162,7 +174,7 @@
             <a href="/">
               <img
                 class="logo"
-                src="static/images/talisman-logo.png"
+                src="static/images/talisman-logo.svg"
                 alt="Talisman"
               />
             </a>
@@ -173,11 +185,15 @@
   </body>
   <script>
     const stickyNav = document.getElementById("sticky-nav");
+    const menuIcon = document.getElementById("menu-btn");
+  </script>
+  <script>
     window.onscroll = function () {
       "use strict";
       if (
         document.body.scrollTop >= 100 ||
-        document.documentElement.scrollTop >= 100
+        document.documentElement.scrollTop >= 100 ||
+        menuIcon.checked
       ) {
         stickyNav.classList.add("nav-colored");
         stickyNav.classList.remove("nav-transparent");
@@ -186,5 +202,16 @@
         stickyNav.classList.remove("nav-colored");
       }
     };
+  </script>
+  <script>
+    menuIcon.addEventListener("change", function (e) {
+      if (e.target.checked) {
+        stickyNav.classList.add("nav-colored");
+        stickyNav.classList.remove("nav-transparent");
+      } else if (window.scrollY < 100) {
+        stickyNav.classList.add("nav-transparent");
+        stickyNav.classList.remove("nav-colored");
+      }
+    });
   </script>
 </html>

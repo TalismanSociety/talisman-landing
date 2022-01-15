@@ -1,6 +1,6 @@
 .logo {
   width: auto;
-  height: 1.5rem;
+  height: 1.75rem;
 }
 
 .heavy {
@@ -38,27 +38,45 @@
   gap: 1.5rem;
 }
 
+.justify-between {
+  justify-content: space-between;
+}
+
 .wrap {
   flex-wrap: wrap;
 }
 
-.nav-colored {
-  background-color: var(--color-black);
-  transition: 0.3s ease-in-out;
-}
-
-.nav-transparent {
-  background-color: transparent;
-  transition: 0.3s ease-in-out;
-}
-
-#sticky-nav {
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-}
-
 .space-y-2 > * + * {
   margin-top: 2rem;
+}
+
+.hero {
+  object-fit: cover;
+  width: 100%;
+  height: 90vh;
+}
+
+@media (min-width: 768px) {
+  .hero {
+    object-fit: contain;
+    width: 100%;
+    height: auto;
+  }
+}
+
+.mobile-only {
+  display: revert;
+}
+
+.desktop-only {
+  display: none;
+}
+
+@media (min-width: 768px) {
+  .mobile-only {
+    display: none;
+  }
+  .desktop-only {
+    display: revert;
+  }
 }
