@@ -91,17 +91,34 @@
           <span class="navicon"></span>
         </label>
         <ul class="menu">
-          <li class="mobile-only" target="_blank" rel="noopener noreferrer">
-            <a href="https://discord.gg/rQgTD9SGtU"> Join Discord </a>
-          </li>
-          <li>
-            <a href="https://app.talisman.xyz"> Launch app </a>
-          </li>
-          <li class="desktop-only">
+          <li class="mobile-only">
+            <!-- header_mobile_join_discord -->
             <a
               href="https://discord.gg/rQgTD9SGtU"
               target="_blank"
               rel="noopener noreferrer"
+              onclick="fathom.trackGoal('RKZB9JTZ', 0);"
+            >
+              Join Discord
+            </a>
+          </li>
+          <li>
+            <!-- header_launch_app -->
+            <a
+              href="https://app.talisman.xyz"
+              target="_blank"
+              onclick="fathom.trackGoal('I6LC5EUP', 0);"
+            >
+              Launch app
+            </a>
+          </li>
+          <li class="desktop-only">
+            <!-- header_desktop_join_discord -->
+            <a
+              href="https://discord.gg/rQgTD9SGtU"
+              target="_blank"
+              rel="noopener noreferrer"
+              onclick="fathom.trackGoal('Y4PYJZ7C', 0);"
             >
               <button>Join Discord</button>
             </a>
@@ -256,5 +273,11 @@
       </nav>
     </footer>
     <script type="text/javascript" src="src/js/nav.js"></script>
+    <script>
+      document.addEventListener("click", function (e) {
+        console.log(`>>>aaa`, e);
+        console.log(`>>>bbb`, e.dataset);
+      });
+    </script>
   </body>
 </html>
