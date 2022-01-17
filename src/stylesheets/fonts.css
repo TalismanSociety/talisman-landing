@@ -6,7 +6,7 @@
 
 @font-face {
   font-family: "Surt Regular";
-  src: url(../../static/fonts/Surt-Regular.woff) format("woff");
+  src: url(../../static/fonts/Surt-Regular.woff2) format("woff");
   font-display: swap;
 }
 
@@ -19,5 +19,11 @@
 @font-face {
   font-family: "Surt SemiBold Expanded";
   src: url(../../static/fonts/Surt-SemiBoldExp.woff2) format("woff");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Surt SemiBold Extended";
+  src: url(../../static/fonts/Surt-SemiBoldExtended.woff2) format("woff");
   font-display: swap;
 }
