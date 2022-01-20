@@ -134,4 +134,5 @@ button.secondary:hover {
   background-color: var(--color-white);
   color: var(--color-black);
   border: 1px solid var(--color-white);
+  opacity: unset;
 }
