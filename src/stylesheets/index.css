@@ -51,6 +51,10 @@ section p {
   margin: revert;
 }
 
+section img {
+  margin-bottom: 3rem;
+}
+
 @media (min-width: 768px) {
   section p {
     margin: 2rem;
