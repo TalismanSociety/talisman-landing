@@ -70,6 +70,15 @@
   flex-wrap: wrap;
 }
 
+.py-0 {
+  padding-top: 0 !important;
+  padding-bottom: 0 !important;
+}
+
+.pr-0 {
+  padding-right: 0 !important;
+}
+
 .space-y-2 > * + * {
   margin-top: 2rem;
 }
@@ -86,7 +95,7 @@
   height: 60vh;
 }
 
-.mobile-only {
+/* .mobile-only {
   display: revert;
 }
 
@@ -101,7 +110,7 @@
   .desktop-only {
     display: revert;
   }
-}
+} */
 
 .cta {
   margin-top: 1rem;

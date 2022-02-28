@@ -1,3 +1,4 @@
+// TODO: Remove. Not in use for now but might be used in the future.
 const stickyNav = document.getElementById("sticky-nav");
 const menuIcon = document.getElementById("menu-btn");
 
