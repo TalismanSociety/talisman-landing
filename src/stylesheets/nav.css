@@ -55,7 +55,7 @@
 }
 
 .header .menu li {
-  font-size: larger;
+  font-size: x-large;
   padding: 0.5rem calc(var(--side-gutter) * 0.75);
 }
 
