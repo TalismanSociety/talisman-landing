@@ -67,6 +67,11 @@
     <link rel="stylesheet" type="text/css" href="src/stylesheets/fonts.css" />
     <link rel="stylesheet" type="text/css" href="src/stylesheets/vars.css" />
     <link rel="stylesheet" type="text/css" href="src/stylesheets/nav.css" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="src/stylesheets/carousel.css"
+    />
     <link rel="stylesheet" type="text/css" href="src/stylesheets/index.css" />
     <link rel="stylesheet" type="text/css" href="src/stylesheets/app.css" />
     <!-- Fathom - beautiful, simple website analytics -->
@@ -94,7 +99,7 @@
           <span class="navicon"></span>
         </label>
         <ul class="menu">
-          <li class="flex justify-between py-0 pr-0">
+          <li class="flex justify-between">
             <a href="/">
               <img
                 class="logo"
@@ -107,104 +112,96 @@
               <span class="navicon"></span>
             </label>
           </li>
-          <br />
-          <li>
-            <a
-              href="https://singular.rmrk.app/collections/b6e98494bff52d3b1e-SPIRIT"
-              target="_blank"
-              rel="noopener noreferrer"
-              onclick="window.fathom.trackGoal('DETCSI5C', 0);"
-            >
-              Get Wallet
-            </a>
-          </li>
-          <li>
-            <!-- header_launch_app -->
-            <a
-              href="https://app.talisman.xyz"
-              target="_blank"
-              onclick="window.fathom.trackGoal('I6LC5EUP', 0);"
-            >
-              Launch Web app
-            </a>
-          </li>
-          <br />
-          <li>
-            <a
-              href="https://glib-calendula-bf6.notion.site/Terms-of-use-6ac8a57691a946f0b4805c34b26be2b9"
-              target="_blank"
-              rel="noopener noreferrer"
-              onclick="window.fathom.trackGoal('DETCSI5C', 0);"
-            >
-              Terms
-            </a>
-          </li>
-
-          <li>
-            <a
-              href="https://glib-calendula-bf6.notion.site/Privacy-policy-e82e4b901d814f46bf04f4472b6d6e91"
-              target="_blank"
-              rel="noopener noreferrer"
-              onclick="window.fathom.trackGoal('DETCSI5C', 0);"
-            >
-              Privacy
-            </a>
-          </li>
-          <li>
-            <a
-              href="https://docs.talisman.xyz"
-              target="_blank"
-              rel="noopener noreferrer"
-              onclick="window.fathom.trackGoal('DETCSI5C', 0);"
-            >
-              Docs
-            </a>
-          </li>
-          <br />
-          <li>
-            <a
-              href="https://twitter.com/wearetalisman"
-              alt="Twitter"
-              target="_blank"
-              rel="noopener noreferrer"
-              onclick="window.fathom.trackGoal('FSCOZ3LG', 0);"
-            >
-              Twitter
-            </a>
-          </li>
-          <li>
-            <!-- header_mobile_join_discord -->
-            <a
-              href="https://discord.gg/rQgTD9SGtU"
-              target="_blank"
-              rel="noopener noreferrer"
-              onclick="window.fathom.trackGoal('RKZB9JTZ', 0);"
-            >
-              Join Discord
-            </a>
-          </li>
-          <li>
-            <a
-              href="https://medium.com/we-are-talisman"
-              alt="Medium"
-              target="_blank"
-              rel="noopener noreferrer"
-              onclick="window.fathom.trackGoal('Z6BKGXGM', 0);"
-            >
-              Medium
-            </a>
-          </li>
-          <li>
-            <a
-              href="https://github.com/TalismanSociety"
-              alt="Github"
-              target="_blank"
-              rel="noopener noreferrer"
-              onclick="window.fathom.trackGoal('LBRGQVY2', 0);"
-            >
-              Github
-            </a>
-          </li>
+          <div class="menu-items-container" style="margin-top: 3.5rem">
+            <li>
+              <a
+                href="https://singular.rmrk.app/collections/b6e98494bff52d3b1e-SPIRIT"
+                target="_blank"
+                rel="noopener noreferrer"
+                onclick="window.fathom.trackGoal('DETCSI5C', 0);"
+              >
+                Get Wallet
+              </a>
+            </li>
+            <li>
+              <!-- header_launch_app -->
+              <a
+                href="https://app.talisman.xyz"
+                target="_blank"
+                onclick="window.fathom.trackGoal('I6LC5EUP', 0);"
+              >
+                Launch Web app
+              </a>
+            </li>
+          </div>
+          <div class="menu-items-container">
+            <li>
+              <a
+                href="https://glib-calendula-bf6.notion.site/Press-Kit-ef55b65be4254f56b7868f3dea9a1bca"
+                target="_blank"
+                rel="noopener noreferrer"
+                onclick="window.fathom.trackGoal('DETCSI5C', 0);"
+              >
+                Press Kit
+              </a>
+            </li>
+            <li>
+              <a
+                href="https://docs.talisman.xyz"
+                target="_blank"
+                rel="noopener noreferrer"
+                onclick="window.fathom.trackGoal('DETCSI5C', 0);"
+              >
+                Docs
+              </a>
+            </li>
+          </div>
+          <div class="menu-items-container">
+            <li>
+              <a
+                href="https://twitter.com/wearetalisman"
+                alt="Twitter"
+                target="_blank"
+                rel="noopener noreferrer"
+                onclick="window.fathom.trackGoal('FSCOZ3LG', 0);"
+              >
+                Twitter
+              </a>
+            </li>
+            <li>
+              <!-- header_mobile_join_discord -->
+              <a
+                href="https://discord.gg/talisman"
+                target="_blank"
+                rel="noopener noreferrer"
+                onclick="window.fathom.trackGoal('RKZB9JTZ', 0);"
+              >
+                Discord
+              </a>
+            </li>
+            <li>
+              <a
+                href="https://medium.com/we-are-talisman"
+                alt="Medium"
+                target="_blank"
+                rel="noopener noreferrer"
+                onclick="window.fathom.trackGoal('Z6BKGXGM', 0);"
+              >
+                Medium
+              </a>
+            </li>
+            <li>
+              <a
+                href="https://github.com/TalismanSociety"
+                alt="Github"
+                target="_blank"
+                rel="noopener noreferrer"
+                onclick="window.fathom.trackGoal('LBRGQVY2', 0);"
+              >
+                Github
+              </a>
+            </li>
+          </div>
         </ul>
       </ul>
     </nav>
@@ -214,27 +211,29 @@
         src="static/images/paraverse-main.jpeg"
         alt="The Paraverse"
       />
-      <h1 class="heavy" style="margin: -3vw 0 0">UNLOCK THE PARAVERSE</h1>
-      <h2 class="text-gutters">
-        Talisman is a crypto wallet that unlocks a universe of web3 applications
-        in Polkadot and Kusama.
-      </h2>
-      <a
-        href="https://singular.rmrk.app/collections/b6e98494bff52d3b1e-SPIRIT"
-        target="_blank"
-        rel="noopener noreferrer"
-        onclick="window.fathom.trackGoal('DETCSI5C', 0);"
-      >
-        <button class="cta">Get Wallet</button>
-      </a>
+      <section class="gutters" style="margin-top: -12vw">
+        <h1 class="heavy">UNLOCK THE PARAVERSE</h1>
+        <h2 class="text-gutters">
+          Talisman is a crypto wallet that unlocks a universe of web3
+          applications in Polkadot and Kusama.
+        </h2>
+        <a
+          href="https://singular.rmrk.app/collections/b6e98494bff52d3b1e-SPIRIT"
+          target="_blank"
+          rel="noopener noreferrer"
+          onclick="window.fathom.trackGoal('DETCSI5C', 0);"
+        >
+          <button class="cta">Get Wallet</button>
+        </a>
+      </section>
     </header>
     <main>
+      <img
+        src="static/images/talisman-extension-account.png"
+        alt="The Talisman Extension"
+        loading="lazy"
+      />
       <section class="gutters">
-        <img
-          src="static/images/card-extension.jpeg"
-          alt="The Talisman Extension"
-          loading="lazy"
-        />
         <div class="text-gutters space-y-2">
           <h1>Take control of your multi-chain assets</h1>
           <p>
@@ -252,12 +251,127 @@
           </a>
         </div>
       </section>
+      <section class="carousel" aria-label="Gallery">
+        <ol class="carousel__viewport">
+          <li
+            id="carousel__slide1"
+            tabindex="0"
+            class="carousel__slide gutters"
+          >
+            <div
+              class="carousel__snapper"
+              style="
+                background-image: url('/static/images/talisman-extension-send-funds.png');
+              "
+            ></div>
+            <a href="#carousel__slide3" class="carousel__prev"
+              >Go to last slide</a
+            >
+            <a href="#carousel__slide2" class="carousel__next"
+              >Go to next slide</a
+            >
+            <div class="carousel__text">Send funds with ease</div>
+          </li>
+          <li
+            id="carousel__slide2"
+            tabindex="0"
+            class="carousel__slide gutters"
+          >
+            <div
+              class="carousel__snapper"
+              style="
+                background-image: url('/static/images/talisman-extension-expanded-view.png');
+              "
+            ></div>
+            <a href="#carousel__slide1" class="carousel__prev"
+              >Go to previous slide</a
+            >
+            <a href="#carousel__slide3" class="carousel__next"
+              >Go to next slide</a
+            >
+            <div class="carousel__text">Fulls screen asset view</div>
+          </li>
+          <li
+            id="carousel__slide3"
+            tabindex="0"
+            class="carousel__slide gutters"
+          >
+            <div
+              class="carousel__snapper"
+              style="
+                background-image: url('/static/images/talisman-extension-sign-transaction.png');
+              "
+            ></div>
+            <a href="#carousel__slide2" class="carousel__prev"
+              >Go to previous slide</a
+            >
+            <a href="#carousel__slide1" class="carousel__next"
+              >Go to next slide</a
+            >
+            <div class="carousel__text">Simple transaction experience</div>
+          </li>
+        </ol>
+        <aside class="carousel__navigation">
+          <ol class="carousel__navigation-list">
+            <li class="carousel__navigation-item">
+              <a href="#carousel__slide1" class="carousel__navigation-button"
+                >Go to slide 1</a
+              >
+            </li>
+            <li class="carousel__navigation-item">
+              <a href="#carousel__slide2" class="carousel__navigation-button"
+                >Go to slide 2</a
+              >
+            </li>
+            <li class="carousel__navigation-item">
+              <a href="#carousel__slide3" class="carousel__navigation-button"
+                >Go to slide 3</a
+              >
+            </li>
+          </ol>
+        </aside>
+      </section>
+      <!-- <section class="carousel gutters">
+        <div class="asset" id="carousel-item1">
+          <div class="flex justify-between relative">
+            <a href="#carousel-item3" class="link-prev">Previous</a>
+            <img
+              src="static/images/talisman-extension-send-funds.png"
+              alt="Send funds"
+            />
+            <a href="#carousel-item2" class="link-next">Next</a>
+          </div>
+          <div>Send funds with ease</div>
+        </div>
+        <div class="asset" id="carousel-item2">
+          <div class="flex justify-between relative">
+            <a href="#carousel-item1" class="link-prev">Previous</a>
+            <img
+              src="static/images/talisman-extension-expanded-view.png"
+              alt="Asset view"
+            />
+            <a href="#carousel-item3" class="link-next">Next</a>
+          </div>
+          <div>Full screen asset view</div>
+        </div>
+        <div class="asset" id="carousel-item3">
+          <div class="flex justify-between relative">
+            <a href="#carousel-item2" class="link-prev">Previous</a>
+            <img
+              src="static/images/talisman-extension-sign-transaction.png"
+              alt="Simple transaction ux"
+            />
+            <a href="#carousel-item1" class="link-next">Next</a>
+          </div>
+          <div>Simple transaction experience</div>
+        </div>
+      </section> -->
+      <img
+        src="static/images/talisman-webapp.png"
+        alt="The Talisman Webapp"
+        loading="lazy"
+      />
       <section class="gutters">
-        <img
-          src="static/images/webapp-portfolio.jpeg"
-          alt="The Talisman Webapp"
-          loading="lazy"
-        />
         <div class="text-gutters space-y-2">
           <h1>Easily get started with DotSama</h1>
           <p>
@@ -288,7 +402,7 @@
             to the vision by joining our community.
           </p>
           <a
-            href="https://discord.gg/rQgTD9SGtU"
+            href="https://discord.gg/talisman"
             target="_blank"
             rel="noopener noreferrer"
             onclick="window.fathom.trackGoal('BM7HL91Z', 0);"
@@ -303,6 +417,58 @@
         <ul class="menu">
           <li>
             <a
+              href="https://app.talisman.xyz"
+              alt="Web App"
+              target="_blank"
+              rel="noopener noreferrer"
+              onclick="window.fathom.trackGoal('IRSF6BKW', 0);"
+            >
+              Web App
+            </a>
+          </li>
+          <li>
+            <a
+              href="https://glib-calendula-bf6.notion.site/Terms-of-use-6ac8a57691a946f0b4805c34b26be2b9"
+              target="_blank"
+              rel="noopener noreferrer"
+              onclick="window.fathom.trackGoal('DETCSI5C', 0);"
+            >
+              Terms
+            </a>
+          </li>
+          <li>
+            <a
+              href="https://glib-calendula-bf6.notion.site/Privacy-policy-e82e4b901d814f46bf04f4472b6d6e91"
+              target="_blank"
+              rel="noopener noreferrer"
+              onclick="window.fathom.trackGoal('DETCSI5C', 0);"
+            >
+              Privacy
+            </a>
+          </li>
+          <li>
+            <a
+              href="https://docs.talisman.xyz"
+              target="_blank"
+              rel="noopener noreferrer"
+              onclick="window.fathom.trackGoal('DETCSI5C', 0);"
+            >
+              Docs
+            </a>
+          </li>
+          <li>
+            <a
+              href="https://glib-calendula-bf6.notion.site/Press-Kit-ef55b65be4254f56b7868f3dea9a1bca"
+              target="_blank"
+              rel="noopener noreferrer"
+              onclick="window.fathom.trackGoal('DETCSI5C', 0);"
+            >
+              Press Kit
+            </a>
+          </li>
+
+          <li>
+            <a
               href="https://twitter.com/wearetalisman"
               alt="Twitter"
               target="_blank"
@@ -314,7 +480,7 @@
           </li>
           <li>
             <a
-              href="https://discord.gg/rQgTD9SGtU"
+              href="https://discord.gg/talisman"
               alt="Discord"
               target="_blank"
               rel="noopener noreferrer"
@@ -343,17 +509,6 @@
               onclick="window.fathom.trackGoal('LBRGQVY2', 0);"
             >
               Github
-            </a>
-          </li>
-          <li>
-            <a
-              href="https://app.talisman.xyz"
-              alt="Web App"
-              target="_blank"
-              rel="noopener noreferrer"
-              onclick="window.fathom.trackGoal('IRSF6BKW', 0);"
-            >
-              Web App
             </a>
           </li>
         </ul>

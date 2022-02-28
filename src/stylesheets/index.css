@@ -3,6 +3,7 @@ html {
   font-family: "Surt Regular", serif;
   font-weight: 400;
   -webkit-font-smoothing: antialiased;
+  overflow-anchor: none;
 }
 
 body {
@@ -39,14 +40,14 @@ p {
 }
 
 section {
-  margin: 6rem 0;
+  margin: 3rem 0;
 }
 
-@media (min-width: 768px) {
+/* @media (min-width: 768px) {
   section {
     margin: 12rem 0;
   }
-}
+} */
 
 section p {
   margin: revert;
