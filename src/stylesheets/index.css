@@ -17,6 +17,7 @@ body {
 h1 {
   font-family: "Surt SemiBold Extended", serif;
   font-size: 2rem;
+  line-height: 1.2;
 }
 
 h2 {
