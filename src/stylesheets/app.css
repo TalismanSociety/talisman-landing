@@ -83,6 +83,10 @@
   justify-content: space-between;
 }
 
+.justify-end {
+  justify-content: end;
+}
+
 .wrap {
   flex-wrap: wrap;
 }
@@ -112,7 +116,7 @@
   height: 60vh;
 }
 
-/* .mobile-only {
+.mobile-only {
   display: revert;
 }
 
@@ -127,7 +131,7 @@
   .desktop-only {
     display: revert;
   }
-} */
+}
 
 .cta {
   margin-top: 1rem;

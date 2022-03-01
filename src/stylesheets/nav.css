@@ -56,11 +56,15 @@
 }
 
 .header .menu .menu-items-container {
-  margin-top: 2.5rem;
+  margin-top: 4rem;
+  font-size: x-large;
+}
+
+.header .menu .menu-items-container.large {
+  font-size: xx-large;
 }
 
 .header .menu li {
-  font-size: x-large;
   margin: 0.75rem calc(var(--side-gutter) * 0.75);
 }
 
