@@ -27,6 +27,7 @@
 
 .carousel .caption {
   margin-top: 1rem;
+  font-size: larger;
 }
 
 /* .carousel .asset + .asset {
