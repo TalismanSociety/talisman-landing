@@ -35,8 +35,14 @@
   right: 0.5rem;
 }
 
-.glide__slide {
-  padding: 4.5rem;
+.glide__slide img {
+  padding: 3rem;
+}
+
+@media (min-width: 768px) {
+  .glide__slide img {
+    height: 90vh;
+  }
 }
 
 .glide__slide .caption {
