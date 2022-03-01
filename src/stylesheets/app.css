@@ -32,6 +32,7 @@
   font-size: 12vw;
   font-weight: 900;
   line-height: 0.9;
+  margin: 0;
 }
 
 .gutters {
@@ -52,7 +53,7 @@
 
 @media (min-width: 768px) {
   .text-gutters {
-    padding: 0 13vw;
+    padding: 0;
   }
 }
 
@@ -118,4 +119,8 @@
 
 .cta {
   margin-top: 1rem;
+}
+
+.section {
+  margin-bottom: 6rem;
 }

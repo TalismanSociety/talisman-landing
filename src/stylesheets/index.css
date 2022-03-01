@@ -39,9 +39,9 @@ p {
   font-size: 1.5rem;
 }
 
-section {
+/* section {
   margin: 3rem 0;
-}
+} */
 
 /* @media (min-width: 768px) {
   section {
@@ -49,19 +49,19 @@ section {
   }
 } */
 
-section p {
+/* section p {
   margin: revert;
-}
+} */
 
 /* section img {
   margin-bottom: 3rem;
 } */
 
-@media (min-width: 768px) {
+/* @media (min-width: 768px) {
   section p {
     margin: 2rem;
   }
-}
+} */
 
 img {
   object-fit: contain;
