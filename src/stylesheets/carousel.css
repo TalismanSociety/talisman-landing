@@ -12,6 +12,9 @@
   width: 48px;
   height: 48px;
   cursor: pointer;
+  border: 1px solid;
+  border-radius: 100%;
+  padding: 0.5rem;
 }
 
 .glide__arrow--left {
