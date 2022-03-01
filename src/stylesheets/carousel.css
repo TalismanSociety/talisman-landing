@@ -36,12 +36,12 @@
 }
 
 .glide__slide img {
-  padding: 3rem;
+  padding: 0 1rem;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 1024px) {
   .glide__slide img {
-    height: 90vh;
+    padding: 0 8rem;
   }
 }
 
