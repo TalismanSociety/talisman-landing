@@ -5,6 +5,10 @@ window.onload = function () {
   menuIcon.checked = false;
 };
 
+function isDownscroll(scrollY, lastScrollTop) {
+  return scrollY > lastScrollTop;
+}
+
 let lastScrollTop = 0;
 window.onscroll = function () {
   const scrollY = window.pageYOffset || document.documentElement.scrollTop;
@@ -12,7 +16,7 @@ window.onscroll = function () {
     document.body.scrollTop >= 50 ||
     document.documentElement.scrollTop >= 50
   ) {
-    if (scrollY > lastScrollTop) {
+    if (isDownscroll(scrollY, lastScrollTop)) {
       // downscroll
       stickyNav.classList.add("closed");
       menuIcon.checked = false;
@@ -22,19 +26,21 @@ window.onscroll = function () {
     }
   }
 
-  lastScrollTop = scrollY <= 0 ? 0 : scrollY;
-
   if (
     document.body.scrollTop >= 300 ||
     document.documentElement.scrollTop >= 300 ||
     menuIcon.checked
   ) {
-    stickyNav.classList.add("nav-colored");
-    stickyNav.classList.remove("nav-transparent");
+    if (!isDownscroll(scrollY, lastScrollTop)) {
+      stickyNav.classList.add("nav-colored");
+      stickyNav.classList.remove("nav-transparent");
+    }
   } else {
     stickyNav.classList.add("nav-transparent");
     stickyNav.classList.remove("nav-colored");
   }
+
+  lastScrollTop = scrollY <= 0 ? 0 : scrollY;
 };
 
 menuIcon.addEventListener("change", function (e) {
