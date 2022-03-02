@@ -68,6 +68,10 @@
   margin: 0.75rem calc(var(--side-gutter) * 0.75);
 }
 
+.header .menu li :hover {
+  color: #a5a5a5;
+}
+
 /* menu icon */
 
 .header .menu-icon {
