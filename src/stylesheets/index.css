@@ -45,11 +45,6 @@ p {
   font-size: 1.5rem;
 }
 
-img {
-  object-fit: contain;
-  width: 100%;
-}
-
 a {
   text-decoration: none;
   color: var(--color-white);

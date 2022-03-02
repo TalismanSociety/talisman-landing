@@ -102,6 +102,10 @@
   padding-right: 0 !important;
 }
 
+.rounded {
+  border-radius: 1rem;
+}
+
 .space-y-2 > * + * {
   margin-top: 2rem;
 }
@@ -141,4 +145,10 @@
 
 .section {
   margin-bottom: 6rem;
+}
+
+.bg-placeholder {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
 }

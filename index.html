@@ -236,9 +236,12 @@
     <header>
       <section class="section">
         <img
-          class="hero"
-          src="static/images/paraverse-main.jpeg"
+          src="/static/images/paraverse-main.jpeg"
+          class="hero bg-placeholder"
           alt="The Paraverse"
+          style="
+            background-image: url('/static/images/0.01x/paraverse-main.png');
+          "
         />
         <section class="gutters" style="margin-top: -3vw">
           <h1 class="heavy">UNLOCK THE PARAVERSE</h1>
@@ -260,10 +263,14 @@
     <main>
       <section class="section gutters">
         <img
+          class="bg-placeholder"
           src="static/images/talisman-extension-account.png"
           alt="The Talisman Extension"
           loading="lazy"
           style="border-radius: 1rem"
+          style="
+            background-image: url('static/images/0.01x/talisman-extension-account.png');
+          "
         />
         <div class="text-gutters space-y-2">
           <h1>Take control of your multi-chain assets</h1>
@@ -289,6 +296,7 @@
               <img
                 src="static/images/talisman-extension-send-funds.png"
                 alt="Send funds"
+                loading="lazy"
               />
               <div class="caption">
                 Send funds across the Paraverse with ease
@@ -298,6 +306,7 @@
               <img
                 src="static/images/talisman-extension-expanded-view.png"
                 alt="Asset view"
+                loading="lazy"
               />
               <div class="caption">Manage multi-chain assets in one place</div>
             </li>
@@ -305,6 +314,7 @@
               <img
                 src="static/images/talisman-extension-sign-transaction.png"
                 alt="Simple transaction ux"
+                loading="lazy"
               />
               <div class="caption">
                 Enjoy a world-class transaction experience
@@ -327,10 +337,13 @@
       </section>
       <section class="section gutters">
         <img
-          src="static/images/talisman-crowdloans.png"
+          class="bg-placeholder rounded"
+          src="static/images/talisman-webapp-nfts.png"
           alt="The Talisman Webapp"
           loading="lazy"
-          style="border-radius: 1rem"
+          style="
+            background-image: url('static/images/0.01x/talisman-webapp-nfts.png');
+          "
         />
         <div class="text-gutters space-y-2">
           <h1>Easily get started with DotSama</h1>
@@ -346,14 +359,13 @@
           </a>
         </div>
       </section>
-
       <section class="section">
         <img
+          class="hero-small bg-placeholder"
           src="static/images/join-us.jpeg"
           alt="Join us"
           loading="lazy"
-          width="100vw"
-          height="auto"
+          style="background-image: url('static/images/0.01x/join-us.png')"
         />
         <div class="gutters text-gutters space-y-2" style="margin-top: 4rem">
           <h1 class="heavy">JOIN US</h1>
@@ -489,7 +501,6 @@
       new Glide(".glide", {
         autoplay: 4000,
         hoverpause: true,
-        perView: 1,
       }).mount();
     </script>
   </body>
