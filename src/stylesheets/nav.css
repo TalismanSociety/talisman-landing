@@ -68,7 +68,7 @@
   margin: 0.75rem calc(var(--side-gutter) * 0.75);
 }
 
-.header .menu li :hover {
+.menu li :hover {
   color: #a5a5a5;
 }
 
