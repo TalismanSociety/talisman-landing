@@ -1,7 +1,12 @@
 html {
   font-size: 16px;
-  font-family: "Surt Regular", serif;
+  font-family: "Surt Regular", sans-serif, -apple-system, BlinkMacSystemFont,
+    "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
+    sans-serif;
   font-weight: 400;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  overflow-anchor: none;
 }
 
 body {
@@ -13,8 +18,11 @@ body {
 }
 
 h1 {
-  font-family: "Surt SemiBold Extended", serif;
+  font-family: "Surt SemiBold Extended", sans-serif, -apple-system,
+    BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell,
+    "Open Sans", "Helvetica Neue", sans-serif;
   font-size: 2rem;
+  line-height: 1.2;
 }
 
 h2 {
@@ -22,9 +30,9 @@ h2 {
   font-weight: 400;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 1024px) {
   h1 {
-    font-size: 2.5rem;
+    font-size: 4.5rem;
   }
 
   h2 {
@@ -37,38 +45,10 @@ p {
   font-size: 1.5rem;
 }
 
-section {
-  margin: 6rem 0;
-}
-
-@media (min-width: 768px) {
-  section {
-    margin: 12rem 0;
-  }
-}
-
-section p {
-  margin: revert;
-}
-
-section img {
-  margin-bottom: 3rem;
-}
-
-@media (min-width: 768px) {
-  section p {
-    margin: 2rem;
-  }
-}
-
-img {
-  object-fit: contain;
-  width: 100%;
-}
-
-a {
+a,
+p a {
   text-decoration: none;
-  color: var(--color-white);
+  color: var(--color-white) !important;
 }
 
 a:hover > button {
@@ -99,6 +79,7 @@ button {
   display: inline-flex;
   align-items: center;
   justify-content: center;
+  font-size: larger;
 
   background-color: var(--color-primary);
   color: var(--color-black);
@@ -114,13 +95,20 @@ button {
 
   text-align: center;
   white-space: nowrap;
+
+  transition: opacity 0.15s ease-in-out;
 }
 
 @media (min-width: 768px) {
   button {
-    padding: 1.5rem 2rem;
+    padding: 1.75rem 4rem;
     width: auto;
   }
+}
+
+button.small {
+  font-size: initial;
+  padding: 1rem 2rem;
 }
 
 button:hover {
@@ -132,6 +120,7 @@ button.secondary {
   background-color: transparent;
   color: var(--color-white);
   border: 1px solid var(--color-white);
+  transition: all 0.15s ease-in-out;
 }
 
 button.secondary:hover {

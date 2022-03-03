@@ -1,16 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>Talisman</title>
+    <title>Talisman -- A wallet for Polkadot & Kusama</title>
+    <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta
       name="description"
-      content="Talisman is a community-owned wallet built for a multi-chain future."
+      content="Talisman is a web3 wallet that unlocks a new world of multi-chain web3 applications in Polkadot and Kusama. Allowing you to create, own and manage your accounts and safely store, send and receive assets."
     />
-    <meta itemprop="name" content="Talisman" />
+    <meta
+      itemprop="name"
+      content="Talisman -- A wallet for Polkadot & Kusama"
+    />
     <meta
       itemprop="description"
-      content="Talisman is a community-owned wallet built for a multi-chain future."
+      content="Talisman is a web3 wallet that unlocks a new world of multi-chain web3 applications in Polkadot and Kusama. Allowing you to create, own and manage your accounts and safely store, send and receive assets."
     />
     <meta
       itemprop="image"
@@ -18,10 +22,13 @@
     />
     <meta property="og:type" content="website" />
     <meta property="og:url" content="https://talisman.xyz/" />
-    <meta property="og:title" content="Talisman" />
+    <meta
+      property="og:title"
+      content="Talisman -- A wallet for Polkadot & Kusama"
+    />
     <meta
       property="og:description"
-      content="Talisman is a community-owned wallet built for a multi-chain future."
+      content="Talisman is a web3 wallet that unlocks a new world of multi-chain web3 applications in Polkadot and Kusama. Allowing you to create, own and manage your accounts and safely store, send and receive assets."
     />
     <meta
       property="og:image"
@@ -29,17 +36,26 @@
     />
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:url" content="https://talisman.xyz/" />
-    <meta name="twitter:title" content="Talisman" />
+    <meta
+      name="twitter:title"
+      content="Talisman -- A wallet for Polkadot & Kusama"
+    />
     <meta
       name="twitter:description"
-      content="Talisman is a community-owned wallet built for a multi-chain future."
+      content="Talisman is a web3 wallet that unlocks a new world of multi-chain web3 applications in Polkadot and Kusama. Allowing you to create, own and manage your accounts and safely store, send and receive assets."
     />
     <meta
       name="twitter:image"
       content="https://talisman.xyz/preview1.png?v=2022-01-21"
     />
-    <meta name="apple-mobile-web-app-title" content="Talisman" />
-    <meta name="application-name" content="Talisman" />
+    <meta
+      name="apple-mobile-web-app-title"
+      content="Talisman -- A wallet for Polkadot & Kusama"
+    />
+    <meta
+      name="application-name"
+      content="Talisman -- A wallet for Polkadot & Kusama"
+    />
     <link
       rel="apple-touch-icon"
       sizes="180x180"
@@ -67,8 +83,17 @@
     <link rel="stylesheet" type="text/css" href="src/stylesheets/fonts.css" />
     <link rel="stylesheet" type="text/css" href="src/stylesheets/vars.css" />
     <link rel="stylesheet" type="text/css" href="src/stylesheets/nav.css" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="src/stylesheets/carousel.css"
+    />
     <link rel="stylesheet" type="text/css" href="src/stylesheets/index.css" />
     <link rel="stylesheet" type="text/css" href="src/stylesheets/app.css" />
+    <link
+      rel="stylesheet"
+      href="src/js/@glidejs/glide/dist/css/glide.core.min.css"
+    />
     <!-- Fathom - beautiful, simple website analytics -->
     <script
       src="https://cdn.usefathom.com/script.js"
@@ -81,7 +106,7 @@
     <nav id="sticky-nav">
       <ul class="header">
         <li>
-          <a href="/">
+          <a href="/" title="Polkadot.js alternative">
             <img
               class="logo"
               src="static/images/talisman-logo.svg"
@@ -89,93 +114,380 @@
             />
           </a>
         </li>
-        <input class="menu-btn" type="checkbox" id="menu-btn" />
-        <label class="menu-icon" for="menu-btn">
-          <span class="navicon"></span>
-        </label>
-        <ul class="menu">
-          <li class="mobile-only">
-            <!-- header_mobile_join_discord -->
-            <a
-              href="https://discord.gg/rQgTD9SGtU"
-              target="_blank"
-              rel="noopener noreferrer"
-              onclick="window.fathom.trackGoal('RKZB9JTZ', 0);"
-            >
-              Join Discord
-            </a>
-          </li>
-          <li>
-            <!-- header_launch_app -->
-            <a
-              href="https://app.talisman.xyz"
-              target="_blank"
-              onclick="window.fathom.trackGoal('I6LC5EUP', 0);"
-            >
-              Launch app
-            </a>
-          </li>
-          <li class="desktop-only">
-            <!-- header_desktop_join_discord -->
-            <a
-              href="https://discord.gg/rQgTD9SGtU"
-              target="_blank"
-              rel="noopener noreferrer"
-              onclick="window.fathom.trackGoal('Y4PYJZ7C', 0);"
-            >
-              <button>Join Discord</button>
-            </a>
-          </li>
-        </ul>
+        <div class="flex">
+          <a
+            class="desktop-only"
+            href="https://chrome.google.com/webstore/detail/talisman-wallet/fijngjgcjhjmmpcmkeiomlglpeiijkld"
+            target="_blank"
+            rel="noopener noreferrer"
+            onclick="window.fathom.trackGoal('9D4EMN15', 0);"
+          >
+            <button class="small">Download</button>
+          </a>
+          <input class="menu-btn" type="checkbox" id="menu-btn" />
+          <label class="menu-icon" for="menu-btn">
+            <span class="navicon"></span>
+          </label>
+          <ul class="menu">
+            <li class="flex justify-end">
+              <input class="menu-btn" type="checkbox" id="menu-btn" checked />
+              <label class="menu-icon" for="menu-btn">
+                <span class="navicon"></span>
+              </label>
+            </li>
+            <div class="menu-items-container large" style="margin-top: unset">
+              <li>
+                <a
+                  href="https://chrome.google.com/webstore/detail/talisman-wallet/fijngjgcjhjmmpcmkeiomlglpeiijkld"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  onclick="window.fathom.trackGoal('9D4EMN15', 0);"
+                >
+                  Download Wallet
+                </a>
+              </li>
+              <li>
+                <!-- header_launch_app -->
+                <a
+                  href="https://app.talisman.xyz"
+                  target="_blank"
+                  onclick="window.fathom.trackGoal('I6LC5EUP', 0);"
+                >
+                  Web app
+                </a>
+              </li>
+            </div>
+            <div class="menu-items-container large">
+              <li>
+                <a
+                  href="https://twitter.com/wearetalisman"
+                  alt="Twitter"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  onclick="window.fathom.trackGoal('FSCOZ3LG', 0);"
+                >
+                  Twitter
+                </a>
+              </li>
+              <li>
+                <!-- header_mobile_join_discord -->
+                <a
+                  href="https://discord.gg/talisman"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  onclick="window.fathom.trackGoal('RKZB9JTZ', 0);"
+                >
+                  Discord
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://medium.com/we-are-talisman"
+                  alt="Medium"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  onclick="window.fathom.trackGoal('Z6BKGXGM', 0);"
+                >
+                  Medium
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://github.com/TalismanSociety"
+                  alt="Github"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  onclick="window.fathom.trackGoal('LBRGQVY2', 0);"
+                >
+                  Github
+                </a>
+              </li>
+            </div>
+            <div class="menu-items-container">
+              <li>
+                <a
+                  href="https://glib-calendula-bf6.notion.site/Press-Kit-ef55b65be4254f56b7868f3dea9a1bca"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  onclick="window.fathom.trackGoal('NKTQP4GL', 0);"
+                >
+                  Press Kit
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://docs.talisman.xyz/talisman/legal-and-security/terms-of-use"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  onclick="window.fathom.trackGoal('XZZIZQ7T', 0);"
+                >
+                  Terms
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://docs.talisman.xyz/talisman/legal-and-security/privacy-policy"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  onclick="window.fathom.trackGoal('4HUAOOE6', 0);"
+                >
+                  Privacy
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://docs.talisman.xyz"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  onclick="window.fathom.trackGoal('AUHUWI8G', 0);"
+                >
+                  Docs
+                </a>
+              </li>
+            </div>
+          </ul>
+        </div>
       </ul>
     </nav>
     <header>
-      <img
-        class="hero"
-        src="static/images/paraverse-main.jpeg"
-        alt="The Paraverse"
-      />
-      <h1 class="heavy" style="margin: -3vw 0 0">UNLOCK THE PARAVERSE</h1>
-      <h2 class="text-gutters">
-        Talisman is a crypto wallet that unlocks a new world of web3
-        applications in Polkadot and Kusama.
-      </h2>
-    </header>
-    <main>
-      <section class="gutters">
+      <section class="section">
         <img
-          src="static/images/card-extension.jpeg"
-          alt="The Talisman Extension"
-          loading="lazy"
+          src="static/images/1x/paraverse-main-1x.png"
+          srcset="
+            static/images/1x/paraverse-main-1x.png 1440w,
+            static/images/2x/paraverse-main-2x.png 2560w
+          "
+          class="hero bg-placeholder"
+          alt="The Paraverse"
+          style="
+            background-image: url(static/images/0.01x/paraverse-main-0.01x.png);
+          "
         />
-        <div class="text-gutters space-y-2">
-          <h1>Take control of your multi-chain assets</h1>
-          <p>
-            The Talisman browser extension allows you to safely store, send,
-            receive, and harness your assets. You can get early access today if
-            you hold a Spirit Key.
-          </p>
+        <section class="gutters" style="margin-top: -3vw">
+          <h1 class="heavy">UNLOCK THE PARAVERSE</h1>
+          <h2 class="text-gutters">
+            Talisman is a web3 wallet that unlocks a universe of applications in
+            Polkadot and Kusama.
+          </h2>
           <a
-            href="https://singular.rmrk.app/collections/b6e98494bff52d3b1e-SPIRIT"
+            href="https://chrome.google.com/webstore/detail/talisman-wallet/fijngjgcjhjmmpcmkeiomlglpeiijkld"
             target="_blank"
             rel="noopener noreferrer"
             onclick="window.fathom.trackGoal('DETCSI5C', 0);"
           >
-            <button class="secondary cta">Get a Spirit Key</button>
+            <button class="cta">Get Wallet</button>
+          </a>
+        </section>
+      </section>
+    </header>
+    <main>
+      <section class="section gutters">
+        <img
+          class="lazy bg-placeholder"
+          src="static/images/0.01x/talisman-extension-account-0.01x.png"
+          srcset="
+            static/images/0.5x/talisman-extension-account-0.5x.png  768w,
+            static/images/1x/talisman-extension-account-1x.png     1440w,
+            static/images/2x/talisman-extension-account-2x.png     2560w
+          "
+          alt="The Talisman Extension"
+          loading="lazy"
+          style="border-radius: 1rem"
+          style="
+            background-image: url('static/images/0.01x/talisman-extension-account-0.01x.png');
+          "
+        />
+        <div class="text-gutters space-y-2">
+          <h1>Take control of your multi-chain assets</h1>
+          <p>
+            The Talisman browser extension allows you to safely store, send, and
+            receive assets. Connect to any application across Polkadot and
+            Kusama, including
+            <a
+              href="https://astar.network/"
+              target="_blank"
+              rel="noopener noreferrer"
+              title="astar"
+            >
+              Astar</a
+            >,
+            <a
+              href="https://acala.network/"
+              target="_blank"
+              rel="noopener noreferrer"
+              title="acala"
+              >Acala</a
+            >,
+            <a
+              href="https://singular.rmrk.app/"
+              target="_blank"
+              rel="noopener noreferrer"
+              title="Singular"
+              >Singular</a
+            >,
+            <a
+              href="https://app.phala.network/"
+              target="_blank"
+              rel="noopener noreferrer"
+              title="phala"
+              >Phala</a
+            >
+            and more.
+          </p>
+          <a
+            href="https://chrome.google.com/webstore/detail/talisman-wallet/fijngjgcjhjmmpcmkeiomlglpeiijkld"
+            target="_blank"
+            rel="noopener noreferrer"
+            onclick="window.fathom.trackGoal('9D4EMN15', 0);"
+          >
+            <button class="secondary cta">Download Wallet</button>
           </a>
         </div>
       </section>
-      <section class="gutters">
+      <section class="no-glide section mobile-only">
+        <div class="no-glide__track" data-glide-el="track">
+          <ul class="no-glide__slides">
+            <li class="no-glide__slide">
+              <img
+                class="lazy"
+                src="static/images/0.01x/talisman-extension-send-funds.png"
+                srcset="
+                  static/images/0.5x/talisman-extension-send-funds-0.5x.png  768w,
+                  static/images/1x/talisman-extension-send-funds-1x.png     1440w,
+                  static/images/2x/talisman-extension-send-funds-2x.png     2560w
+                "
+                alt="Send funds"
+                loading="lazy"
+              />
+              <div class="caption">
+                Send funds across the Paraverse with ease
+              </div>
+            </li>
+            <li class="no-glide__slide">
+              <img
+                class="lazy"
+                src="static/images/0.01x/talisman-extension-expanded-view.png"
+                srcset="
+                  static/images/0.5x/talisman-extension-expanded-view-0.5x.png  768w,
+                  static/images/1x/talisman-extension-expanded-view-1x.png     1440w,
+                  static/images/2x/talisman-extension-expanded-view-2x.png     2560w
+                "
+                alt="Asset view"
+                loading="lazy"
+              />
+              <div class="caption">Manage multi-chain assets in one place</div>
+            </li>
+            <li class="no-glide__slide">
+              <img
+                class="lazy"
+                src="static/images/0.01x/talisman-extension-sign-transaction.png"
+                srcset="
+                  static/images/0.5x/talisman-extension-sign-transaction-0.5x.png  768w,
+                  static/images/1x/talisman-extension-sign-transaction-1x.png     1440w,
+                  static/images/2x/talisman-extension-sign-transaction-2x.png     2560w
+                "
+                alt="Simple transaction ux"
+                loading="lazy"
+              />
+              <div class="caption">
+                Enjoy a world-class transaction experience
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section class="glide section desktop-only">
+        <div class="glide__track" data-glide-el="track">
+          <ul class="glide__slides">
+            <li class="glide__slide">
+              <figure>
+                <img
+                  class="lazy"
+                  src="static/images/0.01x/talisman-extension-send-funds.png"
+                  srcset="
+                    static/images/0.5x/talisman-extension-send-funds-0.5x.png  768w,
+                    static/images/1x/talisman-extension-send-funds-1x.png     1440w,
+                    static/images/2x/talisman-extension-send-funds-2x.png     2560w
+                  "
+                  alt="Send funds"
+                  loading="lazy"
+                />
+                <figcaption class="caption">
+                  Send funds across the Paraverse with ease
+                </figcaption>
+              </figure>
+            </li>
+            <li class="glide__slide">
+              <figure>
+                <img
+                  class="lazy"
+                  src="static/images/0.01x/talisman-extension-expanded-view.png"
+                  srcset="
+                    static/images/0.5x/talisman-extension-expanded-view-0.5x.png  768w,
+                    static/images/1x/talisman-extension-expanded-view-1x.png     1440w,
+                    static/images/2x/talisman-extension-expanded-view-2x.png     2560w
+                  "
+                  alt="Asset view"
+                  loading="lazy"
+                />
+                <figcaption class="caption">
+                  Manage multi-chain assets in one place
+                </figcaption>
+              </figure>
+            </li>
+            <li class="glide__slide">
+              <figure>
+                <img
+                  class="lazy"
+                  src="static/images/0.01x/talisman-extension-sign-transaction.png"
+                  srcset="
+                    static/images/0.5x/talisman-extension-sign-transaction-0.5x.png  768w,
+                    static/images/1x/talisman-extension-sign-transaction-1x.png     1440w,
+                    static/images/2x/talisman-extension-sign-transaction-2x.png     2560w
+                  "
+                  alt="Simple transaction ux"
+                  loading="lazy"
+                />
+                <figcaption class="caption">
+                  Enjoy a world-class transaction experience
+                </figcaption>
+              </figure>
+            </li>
+          </ul>
+          <div class="glide__arrows" data-glide-el="controls">
+            <img
+              src="static/icons/chevron-left.svg"
+              class="glide__arrow glide__arrow--left"
+              data-glide-dir="<"
+            />
+            <img
+              src="static/icons/chevron-right.svg"
+              class="glide__arrow glide__arrow--right"
+              data-glide-dir=">"
+            />
+          </div>
+        </div>
+      </section>
+      <section class="section gutters">
         <img
-          src="static/images/webapp-portfolio.jpeg"
-          alt="The Talisman Webapp"
+          class="lazy bg-placeholder rounded"
+          src="static/images/0.01x/talisman-webapp-nfts-0.01x.png"
+          srcset="
+            static/images/0.5x/talisman-webapp-nfts-0.5x.png  768w,
+            static/images/1x/talisman-webapp-nfts-1x.png     1440w,
+            static/images/2x/talisman-webapp-nfts-2x.png     2560w
+          "
+          alt="Talisman NFTs"
           loading="lazy"
+          style="
+            background-image: url('static/images/0.01x/talisman-webapp-nfts-0.01x.png');
+          "
         />
         <div class="text-gutters space-y-2">
           <h1>Easily get started with DotSama</h1>
           <p>
             The Talisman web app allows you to buy DOT and KSM, contribute to
-            crowdloans, stake (coming soon) and more.
+            crowdloans, view NFTs and more.
           </p>
           <a
             href="https://app.talisman.xyz"
@@ -185,38 +497,90 @@
           </a>
         </div>
       </section>
-      <section>
+      <section class="section">
         <img
-          class="hero-small"
-          src="static/images/join-us.jpeg"
+          class="lazy hero bg-placeholder"
+          data-src="static/images/1x/join-us-1x.png"
+          src="static/images/0.01x/join-us-0.01x.png"
+          srcset="
+            static/images/1x/join-us-1x.png 1440w,
+            static/images/2x/join-us-2x.png 2560w
+          "
           alt="Join us"
           loading="lazy"
-          width="100vw"
-          height="auto"
+          style="background-image: url(static/images/0.01x/join-us-0.01x.png)"
         />
-        <div class="gutters text-gutters space-y-2">
-          <h1>
-            We are on a mission to accelerate composability and unite the
-            Paraverse.
-          </h1>
+        <div class="gutters text-gutters space-y-2" style="margin-top: 4rem">
+          <h1 class="heavy">JOIN US</h1>
           <p>
             Talisman is currently under development and anybody can contribute
             to the vision by joining our community.
           </p>
           <a
-            href="https://discord.gg/rQgTD9SGtU"
+            href="https://discord.gg/talisman"
             target="_blank"
             rel="noopener noreferrer"
             onclick="window.fathom.trackGoal('BM7HL91Z', 0);"
           >
-            <button class="cta">Join us</button>
+            <button class="secondary cta">Join Discord</button>
           </a>
         </div>
       </section>
     </main>
-    <footer class="footer">
+    <footer class="footer" style="margin-top: 16rem">
       <nav>
         <ul class="menu">
+          <li>
+            <a
+              href="https://app.talisman.xyz"
+              alt="Web App"
+              target="_blank"
+              rel="noopener noreferrer"
+              onclick="window.fathom.trackGoal('IRSF6BKW', 0);"
+            >
+              Web App
+            </a>
+          </li>
+          <li>
+            <a
+              href="https://docs.talisman.xyz/talisman/legal-and-security/terms-of-use"
+              target="_blank"
+              rel="noopener noreferrer"
+              onclick="window.fathom.trackGoal('XZZIZQ7T', 0);"
+            >
+              Terms
+            </a>
+          </li>
+          <li>
+            <a
+              href="https://docs.talisman.xyz/talisman/legal-and-security/privacy-policy"
+              target="_blank"
+              rel="noopener noreferrer"
+              onclick="window.fathom.trackGoal('4HUAOOE6', 0);"
+            >
+              Privacy
+            </a>
+          </li>
+          <li>
+            <a
+              href="https://docs.talisman.xyz"
+              target="_blank"
+              rel="noopener noreferrer"
+              onclick="window.fathom.trackGoal('AUHUWI8G', 0);"
+            >
+              Docs
+            </a>
+          </li>
+          <li>
+            <a
+              href="https://glib-calendula-bf6.notion.site/Press-Kit-ef55b65be4254f56b7868f3dea9a1bca"
+              target="_blank"
+              rel="noopener noreferrer"
+              onclick="window.fathom.trackGoal('NKTQP4GL', 0);"
+            >
+              Press Kit
+            </a>
+          </li>
           <li>
             <a
               href="https://twitter.com/wearetalisman"
@@ -230,7 +594,7 @@
           </li>
           <li>
             <a
-              href="https://discord.gg/rQgTD9SGtU"
+              href="https://discord.gg/talisman"
               alt="Discord"
               target="_blank"
               rel="noopener noreferrer"
@@ -261,20 +625,9 @@
               Github
             </a>
           </li>
-          <li>
-            <a
-              href="https://app.talisman.xyz"
-              alt="Web App"
-              target="_blank"
-              rel="noopener noreferrer"
-              onclick="window.fathom.trackGoal('IRSF6BKW', 0);"
-            >
-              Web App
-            </a>
-          </li>
         </ul>
         <div>
-          <a href="/">
+          <a href="/" title="Polkadot.js alternative">
             <img
               class="logo"
               src="static/images/talisman-logo.svg"
@@ -285,6 +638,9 @@
         </div>
       </nav>
     </footer>
-    <script type="text/javascript" src="src/js/nav.js"></script>
+    <script src="src/js/@glidejs/glide/dist/glide.min.js"></script>
+    <script src="src/js/nav.js"></script>
+    <script src="src/js/images.js"></script>
+    <script src="src/js/carousel.js" defer></script>
   </body>
 </html>

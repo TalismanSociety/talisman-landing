@@ -24,14 +24,17 @@
 
 .logo {
   width: auto;
-  height: 1.75rem;
+  height: 2.25rem;
 }
 
 .heavy {
-  font-family: "Whyte Inktrap Heavy", serif;
+  font-family: "Whyte Inktrap Heavy", -apple-system, BlinkMacSystemFont,
+    "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
+    sans-serif;
   font-size: 12vw;
   font-weight: 900;
   line-height: 0.9;
+  margin: 0;
 }
 
 .gutters {
@@ -52,8 +55,24 @@
 
 @media (min-width: 768px) {
   .text-gutters {
-    padding: 0 13vw;
+    padding: 0 16vw;
   }
+}
+
+.relative {
+  position: relative;
+}
+
+.absolute {
+  position: absolute;
+}
+
+.left-0 {
+  left: 0;
+}
+
+.right-0 {
+  right: 0;
 }
 
 .flex {
@@ -66,8 +85,25 @@
   justify-content: space-between;
 }
 
+.justify-end {
+  justify-content: flex-end;
+}
+
 .wrap {
   flex-wrap: wrap;
+}
+
+.py-0 {
+  padding-top: 0 !important;
+  padding-bottom: 0 !important;
+}
+
+.pr-0 {
+  padding-right: 0 !important;
+}
+
+.rounded {
+  border-radius: 1rem;
 }
 
 .space-y-2 > * + * {
@@ -105,4 +141,14 @@
 
 .cta {
   margin-top: 1rem;
+}
+
+.section {
+  margin-bottom: 6rem;
+}
+
+.bg-placeholder {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
 }

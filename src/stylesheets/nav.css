@@ -13,11 +13,12 @@
   top: 0;
   left: 0;
   right: 0;
+  z-index: 100;
 }
 
-#sticky-nav.closed {
-  top: -6rem;
-}
+/* #sticky-nav.closed {
+  right: -6rem;
+} */
 
 .header {
   display: flex;
@@ -26,11 +27,11 @@
   margin: 0.5rem var(--side-gutter);
 }
 
-@media (min-width: 768px) {
+/* @media (min-width: 768px) {
   .header {
     margin: 0 var(--side-gutter);
   }
-}
+} */
 
 .header ul {
   margin: 0;
@@ -42,10 +43,11 @@
 /* menu */
 
 .header .menu {
-  max-height: 0;
-  transition: max-height 0.2s ease-out;
-  top: 4rem;
-  left: 0;
+  max-width: 0;
+  height: 100vh;
+  transition: max-width 0.2s ease-out;
+  top: 0;
+  right: 0;
   position: absolute;
   display: block;
   background-color: var(--color-black);
@@ -53,9 +55,22 @@
   text-align: left;
 }
 
+.header .menu .menu-items-container {
+  margin-top: 4rem;
+  font-family: "Surt Regular";
+}
+
+.header .menu .menu-items-container.large {
+  font-family: "Surt SemiBold Extended";
+  font-size: x-large;
+}
+
 .header .menu li {
-  padding: 1.25rem var(--side-gutter);
-  border-top: 1px solid var(--color-dark-grey);
+  margin: 0.75rem calc(var(--side-gutter) * 0.75);
+}
+
+.menu li :hover {
+  color: #a5a5a5;
 }
 
 /* menu icon */
@@ -71,10 +86,10 @@
 .header .menu-icon .navicon {
   background: var(--color-white);
   display: block;
-  height: 2px;
+  height: 3px;
   position: relative;
   transition: background 0.2s ease-out;
-  width: 18px;
+  width: 2rem;
 }
 
 .header .menu-icon .navicon:before,
@@ -89,11 +104,11 @@
 }
 
 .header .menu-icon .navicon:before {
-  top: 5px;
+  top: 10px;
 }
 
 .header .menu-icon .navicon:after {
-  top: -5px;
+  top: -10px;
 }
 
 /* menu btn */
@@ -103,8 +118,15 @@
 }
 
 .header .menu-btn:checked ~ .menu {
-  max-height: 240px;
+  max-width: 100vw;
+  height: 100vh;
   overflow-y: auto;
+}
+
+@media (min-width: 768px) {
+  .header .menu-btn:checked ~ .menu {
+    max-width: 50vw;
+  }
 }
 
 .header .menu-btn:checked ~ .menu-icon .navicon {
@@ -126,9 +148,9 @@
 
 /* 48em = 768px */
 
-@media (min-width: 768px) {
+/* @media (min-width: 768px) {
   .header .menu {
-    max-height: none;
+    max-width: none;
     display: flex;
     align-items: center;
     gap: 1.5rem;
@@ -144,10 +166,10 @@
     padding: revert;
     border-top: revert;
   }
-}
+} */
 
 .footer {
-  padding: var(--side-gutter);
+  padding: 1rem var(--side-gutter);
 }
 
 .footer nav ul {
@@ -162,7 +184,7 @@
   margin-top: 1rem;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 1024px) {
   .footer nav {
     display: flex;
     align-items: center;
