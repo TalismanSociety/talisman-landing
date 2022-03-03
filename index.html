@@ -311,7 +311,7 @@
               rel="noopener noreferrer"
               title="astar"
             >
-              Astar </a
+              Astar</a
             >,
             <a
               href="https://acala.network/"
@@ -452,11 +452,13 @@
           </ul>
           <div class="glide__arrows" data-glide-el="controls">
             <img
+              id="glide__arrow--left"
               src="static/icons/chevron-left.svg"
               class="glide__arrow glide__arrow--left"
               data-glide-dir="<"
             />
             <img
+              id="glide__arrow--right"
               src="static/icons/chevron-right.svg"
               class="glide__arrow glide__arrow--right"
               data-glide-dir=">"
@@ -633,11 +635,9 @@
         </div>
       </nav>
     </footer>
+    <script src="src/js/@glidejs/glide/dist/glide.min.js"></script>
     <script src="src/js/nav.js"></script>
     <script src="src/js/images.js"></script>
-    <script src="src/js/@glidejs/glide/dist/glide.min.js"></script>
-    <script>
-      new Glide(".glide").mount();
-    </script>
+    <script src="src/js/carousel.js" defer></script>
   </body>
 </html>
