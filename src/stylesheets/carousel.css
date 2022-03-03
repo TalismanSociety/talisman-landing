@@ -44,11 +44,17 @@
   .glide__arrow--left {
     position: absolute;
     left: var(--side-gutter);
+    padding-right: 0.6rem;
+    opacity: 0.8;
+    transition: opacity 0.15s ease-out;
   }
 
   .glide__arrow--right {
     position: absolute;
     right: var(--side-gutter);
+    padding-left: 0.6rem;
+    opacity: 0.8;
+    transition: opacity 0.15s ease-out;
   }
 
   .glide__slide img {
