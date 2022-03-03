@@ -57,11 +57,12 @@
 
 .header .menu .menu-items-container {
   margin-top: 4rem;
-  font-size: large;
+  font-family: "Surt Regular";
 }
 
 .header .menu .menu-items-container.large {
-  font-size: xx-large;
+  font-family: "Surt SemiBold Extended";
+  font-size: x-large;
 }
 
 .header .menu li {
