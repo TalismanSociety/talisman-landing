@@ -45,9 +45,10 @@ p {
   font-size: 1.5rem;
 }
 
-a {
+a,
+p a {
   text-decoration: none;
-  color: var(--color-white);
+  color: var(--color-white) !important;
 }
 
 a:hover > button {

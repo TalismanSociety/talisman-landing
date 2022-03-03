@@ -2,6 +2,7 @@
 <html lang="en">
   <head>
     <title>Talisman -- A wallet for Polkadot & Kusama</title>
+    <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta
       name="description"
@@ -251,7 +252,8 @@
     <header>
       <section class="section">
         <img
-          src="static/images/1x/paraverse-main.png"
+          src="static/images/0.01x/paraverse-main.png"
+          data-src="static/images/1x/paraverse-main.png"
           srcset="
             static/images/1x/paraverse-main.png 1440w,
             static/images/2x/paraverse-main.png 2560w
@@ -261,6 +263,7 @@
           style="
             background-image: url('/static/images/0.01x/paraverse-main.png');
           "
+          decoding="async"
         />
         <section class="gutters" style="margin-top: -3vw">
           <h1 class="heavy">UNLOCK THE PARAVERSE</h1>
@@ -301,7 +304,37 @@
           <p>
             The Talisman browser extension allows you to safely store, send, and
             receive assets. Connect to any application across Polkadot and
-            Kusama, including Astar, Acala, Singular, Phala and more.
+            Kusama, including
+            <a
+              href="https://astar.network/"
+              target="_blank"
+              rel="noopener noreferrer"
+              title="astar"
+            >
+              Astar </a
+            >,
+            <a
+              href="https://acala.network/"
+              target="_blank"
+              rel="noopener noreferrer"
+              title="acala"
+              >Acala</a
+            >,
+            <a
+              href="https://singular.rmrk.app/"
+              target="_blank"
+              rel="noopener noreferrer"
+              title="Singular"
+              >Singular</a
+            >,
+            <a
+              href="https://app.phala.network/"
+              target="_blank"
+              rel="noopener noreferrer"
+              title="phala"
+              >Phala</a
+            >
+            and more.
           </p>
           <a
             href="https://chrome.google.com/webstore/detail/talisman-wallet/fijngjgcjhjmmpcmkeiomlglpeiijkld"
@@ -593,6 +626,7 @@
       </nav>
     </footer>
     <script src="src/js/nav.js"></script>
+    <script src="src/js/images.js"></script>
     <script src="src/js/@glidejs/glide/dist/glide.min.js"></script>
     <script>
       new Glide(".glide", {
