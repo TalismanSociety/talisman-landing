@@ -124,7 +124,7 @@
 
 @media (min-width: 768px) {
   .header .menu-btn:checked ~ .menu {
-    max-width: 425px;
+    max-width: 50vw;
   }
 }
 
