@@ -10,7 +10,7 @@
 .glide .caption {
   margin-top: 0.5rem;
   padding: 0 2rem;
-  color: #a5a5a5;
+  color: var(--color-light-grey);
 }
 
 @media (min-width: 768px) {
@@ -70,6 +70,6 @@
   .glide__slide .caption {
     margin-top: 1rem;
     font-size: larger;
-    color: #a5a5a5;
+    color: var(--color-light-grey);
   }
 }

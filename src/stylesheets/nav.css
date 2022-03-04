@@ -72,7 +72,7 @@
 }
 
 .menu li :hover {
-  color: #a5a5a5;
+  color: var(--color-light-grey);
 }
 
 /* menu icon */
