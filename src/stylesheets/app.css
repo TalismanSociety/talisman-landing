@@ -152,3 +152,7 @@
   background-size: cover;
   background-position: center;
 }
+
+.no-hover {
+  pointer-events: none;
+}
