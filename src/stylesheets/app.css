@@ -144,11 +144,15 @@
 }
 
 .section {
-  margin-bottom: 6rem;
+  margin-bottom: 12rem;
 }
 
 .bg-placeholder {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+}
+
+.no-hover {
+  pointer-events: none;
 }

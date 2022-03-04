@@ -10,7 +10,7 @@
 .glide .caption {
   margin-top: 0.5rem;
   padding: 0 2rem;
-  color: #a5a5a5;
+  color: var(--color-light-grey);
 }
 
 @media (min-width: 768px) {
@@ -32,8 +32,8 @@
     border-radius: 100%;
     padding: 0.5rem;
     opacity: 0.7;
-    transition: opacity 1s ease-in-out;
-    transition: transform 0.3s ease-in-out;
+    transition: opacity 200ms ease-out;
+    transition: transform 200ms ease-out;
   }
 
   .glide__arrow:hover {
@@ -70,6 +70,6 @@
   .glide__slide .caption {
     margin-top: 1rem;
     font-size: larger;
-    color: #a5a5a5;
+    color: var(--color-light-grey);
   }
 }

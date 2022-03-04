@@ -14,11 +14,12 @@
   left: 0;
   right: 0;
   z-index: 100;
+  transition: top 0.2s ease-in-out;
 }
 
-/* #sticky-nav.closed {
-  right: -6rem;
-} */
+#sticky-nav.closed {
+  top: -4rem;
+}
 
 .header {
   display: flex;
@@ -53,16 +54,17 @@
   background-color: var(--color-black);
   width: 100%;
   text-align: left;
+  font-size: x-large;
+  font-family: "Surt Regular";
 }
 
 .header .menu .menu-items-container {
   margin-top: 4rem;
-  font-family: "Surt Regular";
 }
 
 .header .menu .menu-items-container.large {
   font-family: "Surt SemiBold Extended";
-  font-size: x-large;
+  font-size: xx-large;
 }
 
 .header .menu li {
@@ -70,7 +72,7 @@
 }
 
 .menu li :hover {
-  color: #a5a5a5;
+  color: var(--color-light-grey);
 }
 
 /* menu icon */
