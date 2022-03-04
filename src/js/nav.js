@@ -19,12 +19,14 @@ let lastScrollTop = 0;
 window.onscroll = function () {
   const scrollY = window.pageYOffset || document.documentElement.scrollTop;
   const isDownscroll = scrollY > lastScrollTop;
-  if (isDownscroll || !isBeyond(thresholdSmall)) {
-    stickyNav.classList.add("nav-transparent");
-    stickyNav.classList.remove("nav-colored");
+  if (isDownscroll) {
+    stickyNav.classList.add("closed");
+    // stickyNav.classList.add("nav-transparent");
+    // stickyNav.classList.remove("nav-colored");
   } else {
-    stickyNav.classList.add("nav-colored");
-    stickyNav.classList.remove("nav-transparent");
+    stickyNav.classList.remove("closed");
+    // stickyNav.classList.add("nav-colored");
+    // stickyNav.classList.remove("nav-transparent");
   }
 
   lastScrollTop = scrollY <= 0 ? 0 : scrollY;
