@@ -94,6 +94,12 @@
   width: 2rem;
 }
 
+@media (min-width: 2560px) {
+  .header .menu-icon .navicon {
+    width: 1.5rem;
+  }
+}
+
 .header .menu-icon .navicon:before,
 .header .menu-icon .navicon:after {
   background: var(--color-white);
