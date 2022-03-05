@@ -85,7 +85,7 @@ button {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  font-size: larger;
+  font-size: 1rem;
 
   background-color: var(--color-primary);
   color: var(--color-black);
@@ -113,7 +113,7 @@ button {
 }
 
 button.small {
-  font-size: initial;
+  font-size: 1rem;
   padding: 1rem 2rem;
 }
 

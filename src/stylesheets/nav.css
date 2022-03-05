@@ -54,7 +54,7 @@
   background-color: var(--color-black);
   width: 100%;
   text-align: left;
-  font-size: x-large;
+  font-size: 1.5rem;
   font-family: "Surt Regular";
 }
 
@@ -64,7 +64,7 @@
 
 .header .menu .menu-items-container.large {
   font-family: "Surt SemiBold Extended";
-  font-size: xx-large;
+  font-size: 2rem;
 }
 
 .header .menu li {

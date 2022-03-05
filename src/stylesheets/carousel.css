@@ -69,7 +69,7 @@
 
   .glide__slide .caption {
     margin-top: 1rem;
-    font-size: larger;
+    font-size: 1.5rem;
     color: var(--color-light-grey);
   }
 }
