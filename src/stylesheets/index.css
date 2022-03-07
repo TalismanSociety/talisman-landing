@@ -52,9 +52,13 @@ p {
 }
 
 a,
-p a {
+p a.link {
   text-decoration: none;
   color: var(--color-white);
+}
+
+p a.link:hover {
+  color: var(--color-light-grey);
 }
 
 a:hover > button {
