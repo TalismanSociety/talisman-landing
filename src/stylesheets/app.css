@@ -151,6 +151,12 @@
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+  filter: blur(20px);
+  transition: filter 400ms ease-out 200ms;
+}
+
+.bg-placeholder.loaded {
+  filter: none;
 }
 
 .no-hover {
