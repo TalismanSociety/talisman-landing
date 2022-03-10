@@ -35,6 +35,8 @@
   font-weight: 900;
   line-height: 0.9;
   margin: 0;
+  /* FIX: Safari issue with text cut off at top */
+  transform: translateY(1.5rem);
 }
 
 .gutters {
