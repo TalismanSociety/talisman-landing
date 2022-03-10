@@ -37,6 +37,25 @@
   margin: 0;
   /* FIX: Safari issue with text cut off at top */
   transform: translateY(1.5rem);
+  margin-bottom: 3rem;
+}
+
+.overlap-title {
+  margin-top: -2rem;
+  position: relative;
+  z-index: 100;
+}
+
+@media (min-width: 768px) {
+  .overlap-title {
+    margin-top: -3rem;
+  }
+}
+
+@media (min-width: 1440px) {
+  .overlap-title {
+    margin-top: -4rem;
+  }
 }
 
 .gutters {
