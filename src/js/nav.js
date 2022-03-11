@@ -19,12 +19,18 @@ let lastScrollTop = 0;
 window.onscroll = function () {
   const scrollY = window.pageYOffset || document.documentElement.scrollTop;
   const isDownscroll = scrollY > lastScrollTop;
-  if (isDownscroll || !isBeyond(thresholdSmall)) {
+  if (isDownscroll || !isBeyond(thresholdLarge)) {
     stickyNav.classList.add("nav-transparent");
     stickyNav.classList.remove("nav-colored");
   } else {
     stickyNav.classList.add("nav-colored");
     stickyNav.classList.remove("nav-transparent");
+  }
+
+  if (isDownscroll) {
+    stickyNav.classList.add("closed");
+  } else {
+    stickyNav.classList.remove("closed");
   }
 
   lastScrollTop = scrollY <= 0 ? 0 : scrollY;
