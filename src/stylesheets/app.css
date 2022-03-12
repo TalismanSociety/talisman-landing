@@ -35,6 +35,27 @@
   font-weight: 900;
   line-height: 0.9;
   margin: 0;
+  /* FIX: Safari issue with text cut off at top */
+  transform: translateY(1.5rem);
+  margin-bottom: 3rem;
+}
+
+.overlap-title {
+  margin-top: -2rem;
+  position: relative;
+  z-index: 100;
+}
+
+@media (min-width: 768px) {
+  .overlap-title {
+    margin-top: -3rem;
+  }
+}
+
+@media (min-width: 1440px) {
+  .overlap-title {
+    margin-top: -4rem;
+  }
 }
 
 .gutters {
@@ -151,6 +172,12 @@
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+  filter: blur(20px);
+  transition: filter 400ms ease-out 200ms;
+}
+
+.bg-placeholder.loaded {
+  filter: none;
 }
 
 .no-hover {
