@@ -43,7 +43,6 @@
 .overlap-title {
   margin-top: -2rem;
   position: relative;
-  z-index: 100;
 }
 
 @media (min-width: 768px) {
